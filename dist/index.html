@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Credit Hub</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	<header class="header">
+    <div class="header__body">
+        <div class="header__logo">
+            <a href="#">
+                <img src="img/logo/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="header__menu menu">
+            <div class="menu__head">
+                <div class="menu__logo">
+                    <a href="#">
+                        <img src="img/logo/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="menu__close"><span></span></div>
+            </div>
+            <div class="menu__scroll-wrap">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#" class="menu__link current-menu-item">
+                            <span>01</span>
+                            Free Property Report
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>02</span>
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>03</span>
+                            Loans
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>04</span>
+                            Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>05</span>
+                            Resources
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>06</span>
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="tel:1300782944" class="header__phone">
+            <img class="img-svg" src="img/icons/phone.svg" alt="">
+            1300 782 944
+        </a>
+        <div class="header__burger">
+            <img src="img/icons/burger.svg" alt="">
+        </div> 
+    </div>
+</header>
+
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page home-page">
+		<section class="promo _padding-top">
+			<div class="promo__bg ibg">
+				<img src="img/photo/homebannerbg.jpg" alt="">
+			</div>
+			<div class="promo__body container">
+				<div class="promo__content-wrap">
+					<h1 class="promo__title title-1">
+						Your Trusted Personal Finance Broker.
+					</h1>
+					<ul class="promo__subtitle">
+						<li>
+							Dedicated personal manager
+						</li>
+						<li>
+							Lower rate with exceptional service at one place.
+						</li>
+						<li>
+							Advanced online platform
+						</li>
+					</ul>
+					<div class="promo__group">
+						<a href="#" class="promo__btn">
+							<span>
+								<p>Buying a house?</p>
+								<p>Find the right loan</p>
+							</span>
+						</a>
+						<a href="#" class="promo__btn">
+							<span>
+								<p>Thinking of refinance?</p>
+								<p>Loan health check</p>
+							</span>
+						</a>
+					</div>
+					<div class="promo__text">
+						This won’t affect your credit rating*
+					</div>
+					<div class="promo__img">
+						<img src="img/photo/hero-img.png" alt="">
+					</div>
+					<div class="promo__values" data-da="promo-values-mob-wrap,first,575.98">
+						<h6 class="promo__values-title">Find out about our latest rates</h6>
+						<ul class="promo__values-list">
+							<li>
+								<a href="#" class="values-circle">
+									<div class="values-circle__layer-1">
+										<svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+											<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+												fill="transparent"></circle>
+											<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
+												fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+										</svg>
+									</div>
+									<div class="values-circle__layer-2">
+										<div class="values-circle__icon">
+											<img class="img-svg" src="img/icons/values-circle-icon-1.svg" alt="">
+										</div>
+										<div class="values-circle__num">
+											1.77<sub>%</sub>
+										</div>
+										<div class="values-circle__text">
+											home loan
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="values-circle">
+									<div class="values-circle__layer-1">
+										<svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+											<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+												fill="transparent"></circle>
+											<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
+												fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+										</svg>
+									</div>
+									<div class="values-circle__layer-2">
+										<div class="values-circle__icon">
+											<img class="img-svg" src="img/icons/values-circle-icon-2.svg" alt="">
+										</div>
+										<div class="values-circle__num">
+											2.5<sub>%</sub>
+										</div>
+										<div class="values-circle__text">
+											business loan
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="values-circle">
+									<div class="values-circle__layer-1">
+										<svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+											<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+												fill="transparent"></circle>
+											<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
+												fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+										</svg>
+									</div>
+									<div class="values-circle__layer-2">
+										<div class="values-circle__icon">
+											<img class="img-svg" src="img/icons/values-circle-icon-3.svg" alt="">
+										</div>
+										<div class="values-circle__num">
+											2.9<sub>%</sub>
+										</div>
+										<div class="values-circle__text">
+											asset finance
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="promo-values-mob-wrap"></div>
+
+		<section class="process">
+			<div class="process__body container">
+				<h2 class="process__title title-2">
+					Our process is easy and it works
+				</h2>
+				<div class="process__subtitle subtitle">
+					Our proactive team and the custom-made portal will help and assist you at every stage.
+				</div>
+				<div class="process__slider" data-mobile="false">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="process-item">
+									<div class="process-item__circle">
+										<div class="process-item__num">01</div>
+										<div class="process-item__icon">
+											<img src="img/icons/process-icon-1.svg" alt="">
+										</div>
+										<div class="process-item__arrow">
+											<img class="img-svg" src="img/icons/arrow-right.svg" alt="">
+										</div>
+									</div>
+									<div class="process-item__title">
+										Simple online application
+									</div>
+									<div class="process-item__text">
+										<p>
+											Fill out our fast-online
+											application Or let the
+											dedicated manager do that
+											for you.
+										</p>
+										<p>
+											Get your personalised loan
+											scenario with comparison
+											report in less than 60 seconds.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="process-item">
+									<div class="process-item__circle">
+										<div class="process-item__num">02</div>
+										<div class="process-item__icon">
+											<img src="img/icons/process-icon-2.svg" alt="">
+										</div>
+										<div class="process-item__arrow">
+											<img class="img-svg" src="img/icons/arrow-right.svg" alt="">
+										</div>
+									</div>
+									<div class="process-item__title">
+										We find the right loan
+									</div>
+									<div class="process-item__text">
+										<p>
+											Our broker services are free with access to over 35+ lenders.
+										</p>
+										<p>
+											We provide you with solutions as per your need and expert
+											advice on products.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="process-item">
+									<div class="process-item__circle">
+										<div class="process-item__num">03</div>
+										<div class="process-item__icon">
+											<img src="img/icons/process-icon-3.svg" alt="">
+										</div>
+										<div class="process-item__arrow">
+											<img class="img-svg" src="img/icons/arrow-right.svg" alt="">
+										</div>
+									</div>
+									<div class="process-item__title">
+										We’ll do the rest
+									</div>
+									<div class="process-item__text">
+										<p>
+											Carry out all the legwork on your behalf.
+										</p>
+										<p>
+											Update and guide you from start to finish so that you stay away from all the
+											hassles.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="process-item">
+									<div class="process-item__circle">
+										<div class="process-item__num">04</div>
+										<div class="process-item__icon">
+											<img src="img/icons/process-icon-4.svg" alt="">
+										</div>
+										<div class="process-item__arrow">
+											<img class="img-svg" src="img/icons/arrow-right.svg" alt="">
+										</div>
+									</div>
+									<div class="process-item__title">
+										Automated tracking progress
+									</div>
+									<div class="process-item__text">
+										<p>
+											Automated loan progress updates, with dedicated manager support.
+										</p>
+										<p>
+											Custom-built portal with built-in free resources is available to all
+											customers.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="process-item">
+									<div class="process-item__circle">
+										<div class="process-item__num">05</div>
+										<div class="process-item__icon">
+											<img src="img/icons/process-icon-5.svg" alt="">
+										</div>
+										<div class="process-item__arrow">
+											<img class="img-svg" src="img/icons/arrow-right.svg" alt="">
+										</div>
+									</div>
+									<div class="process-item__title">
+										Ongoing support promise
+									</div>
+									<div class="process-item__text">
+										<p>
+											We promise ongoing support till the facility ends.
+										</p>
+										<p>
+											Free property report and regular loan health check for all
+											our customers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="process__bottom">
+					<a href="#" class="btn-default">
+						Talk to us
+					</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	
+	<!-- == // FOOTER ================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+</body>
+
+</html>

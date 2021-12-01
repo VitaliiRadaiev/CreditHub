@@ -1,0 +1,7 @@
+.home-page {
+    & .process {
+        @media (max-width: 575.98px) {
+            padding-top: 0;
+        }
+    }
+}

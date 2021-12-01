@@ -1,0 +1,457 @@
+.promo {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        & img {
+            @media (min-width: 960px) {
+                object-position: right top;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        padding-top: 12rem;
+        padding-bottom: 10rem;
+
+        @media (max-width: 575.98px) {
+            padding-top: 58px;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__content-wrap {
+        width: 90rem;
+
+        @media (max-width: $md2+px) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0.3rem;
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.55em;
+        margin-bottom: 3rem;
+
+        @media (max-width: $md2+px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 575.98px) {
+            display: block;
+        }
+
+        & > li {
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+            &:before {
+                content: "•";
+            }
+        }
+    }
+
+    &__group {
+        display: flex;
+        margin-bottom: 2rem;
+
+        @media (max-width: 575.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__btn {
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        min-height: 10em;
+        padding: 2em 5.2em 2em 3.8em;
+        color: #fff;
+        transition: all 0.3s ease;
+
+        @media (max-width: 575.98px) {
+            align-self: flex-start;
+            min-width: 210px;
+            min-height: 60px;
+            padding:10px 30px 10px 28px; 
+        }
+
+        &:first-child {
+            background-color: $mainColor;
+            margin-right: 1.4em;
+
+            @media (max-width: 575.98px) {
+                margin-right: 0;
+                margin-bottom: 11px;
+            }
+
+            @media (min-width: 992px) {
+                &:hover {
+                    background-color: $hover;
+                }
+            }
+        }
+
+        &:last-child {
+            background-color: $mainColor2;
+
+            @media (min-width: 992px) {
+                &:hover {
+                    background-color: $hover2;
+                }
+            }
+        }
+
+        & > span {
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        & p:first-child {
+            font-size: 2.6em;
+            font-weight: 500;
+            line-height: 1.192em;
+
+            @media (max-width: 575.98px) {
+                font-size: 15px;
+            }
+        }
+        & p:last-child {
+            font-size: 1.6em;
+            font-weight: 400;
+            line-height: 1.375em;
+
+            @media (max-width: 575.98px) {
+                font-size: 10px;
+            }
+
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 0.31em;
+                height: 0.625em;
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCA0IDkiPjxnPjxnPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0uMDQuNTd2OC4wMmwzLjc5NC0zLjc5NHoiLz48L2c+PC9nPjwvc3ZnPg==");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 0.25em;
+            }
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                & > span {
+                    transform: translateX(1em);
+                }
+            }
+        }
+    }
+
+    &__text {
+        opacity: 0.2;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2em;
+        margin-bottom: 5.6rem;
+
+        @media (max-width: $md2+px) {
+            font-size: 10px;
+        }
+
+        @media (max-width: 575.98px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 78.2rem;
+        z-index: -1;
+        transform: translateX(8.5%);
+        & img {
+            width: 100%;
+            z-index: 2;
+            position: relative;
+            display: block;
+        }
+
+        @media (max-width: $md2+px) {
+            width: 581px;
+            transform: translateX(27.5%);
+        }
+
+        @media (max-width: 575.98px) {
+            position: static;
+            width: 448px;
+            transform: translateX(20px);
+            margin-left: auto;
+
+            & img {
+                @media (max-width: 375.98px) {
+                    margin-left: -30px;
+                }
+            }
+        }
+    }
+
+    &__values {
+    }
+
+    &__values-title {
+        font-size: 2.8rem;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 1.21em;
+        margin-bottom: 2.7rem;
+
+        @media (max-width: 575.98px) {
+            text-align: center;
+            max-width: 178px;
+            margin: 0 auto 23px;
+            font-size: 17px;
+        }
+    }
+
+    &__values-list {
+        @media (min-width: 960px) {
+            display: flex;
+        }
+
+        & > li {
+            @media (max-width: 575.98px) {
+                display: flex;
+                justify-content: center;
+            }
+
+            &:not(:last-child) {
+                margin-right: 2.5rem;
+
+                @media (max-width: $md2+px) {
+                    margin-right: 0;
+                    margin-bottom: 8px;
+                }
+            }
+
+            &:nth-child(2) {
+                & .values-circle {
+
+                    @media (min-width: 992px) {
+                        &:hover {
+                            & .values-circle__layer-1 {
+                                & svg {
+                                    & circle {
+                                        &.donut-ring {
+                                            stroke-dashoffset: 65;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .values-circle__layer-1 {
+                        & svg {
+                            & circle {
+                                stroke-width: 0.15em;
+                
+                                &.donut-hole {
+                                    stroke: $mainColor2;
+                                }
+
+                                &.donut-ring {
+                                    stroke: $hover2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                & .values-circle {
+
+                    @media (min-width: 992px) {
+                        &:hover {
+                            & .values-circle__layer-1 {
+                                & svg {
+                                    & circle {
+                                        &.donut-ring {
+                                            stroke-dashoffset: 40;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .values-circle__layer-1 {
+                        & svg {
+                            & circle {
+                                stroke-width: 0.15em;
+                
+                                &.donut-hole {
+                                    stroke: rgba(#fff, 0.17);
+                                    
+                                    @media (max-width: 575.98px) {
+                                        stroke: #173042;
+                                    }
+                                }
+
+                                &.donut-ring {
+                                    stroke: rgba(#fff, 0.57);
+                                }
+                            }
+                        }
+                    }
+
+                    @media (max-width: 575.98px) {
+                        & .values-circle__icon svg path {
+                            fill: #173042;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.promo-values-mob-wrap {
+    @media (min-width: 576px) {
+        display: none;
+    }
+    padding: 63px 20px 0;
+    margin-bottom: 57px;
+}
+
+
+.values-circle {
+    display: block;
+    font-size: 1rem;
+    height: 19em;
+    width: 19em;
+    position: relative;
+    text-align: center;
+    color: #fff;
+
+    @media (max-width: 575.98px) {
+        color: #173042;
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            & .values-circle__layer-1 {
+                & svg {
+                    & circle {
+                        &.donut-ring {
+                            stroke-dashoffset: 30;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__layer-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transform: rotate(-90deg);
+        overflow: hidden;
+
+        & svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 124%;
+            height: 124%;
+            transform: translate(-50%, -50%);
+            & circle {
+                stroke-width: 1.2px;
+
+                @media (max-width: $md2+px) {
+                    stroke-width: 1.5px !important;
+                }
+
+                &.donut-hole {
+                    stroke: $mainColor;
+                }
+                &.donut-ring {
+                    transition: all 0.3s ease;
+                    stroke: $hover;
+                    stroke-dashoffset: 100;
+                    stroke-dasharray: 100;
+                }
+            }
+        }
+    }
+
+    &__layer-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 2.4em;
+        margin-bottom: 0.5em;
+
+        & img, & svg {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__num {
+        font-size: 4.4em;
+        font-weight: 500;
+        line-height: 1em;
+        margin-bottom: 0.1em;
+
+        & sub {
+            bottom: 0;
+            font-size: 0.68em;
+        }
+    }
+
+    &__text {
+        font-size: 1.2em;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @media (max-width: 575.98px) {
+            font-size: 10px;
+        }
+    }
+}
