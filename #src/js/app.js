@@ -29,6 +29,16 @@ window.addEventListener('load', function () {
 	@@include('_function.js');
 	@@include('../common/header/header.js');
 	@@include('../common/process/process.js');
+	@@include('../common/tabs/tabs.js');
+	@@include('../common/offer/offer.js');
+	@@include('../common/reviews/reviews.js');
+
+	let wow = new WOW({
+		boxClass: '_anim',
+		offset: 7,
+		live: true,
+	})
+	wow.init();
 
 });
 
@@ -38,6 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	@@include('files/dynamic_adapt.js');
+	@@include('files/scrollAnimation.js');
 
 	function testWebP(callback) {
 
@@ -56,4 +67,107 @@ window.addEventListener('DOMContentLoaded', function () {
 			document.querySelector('body').classList.add('no-webp');
 		}
 	});
+
+	function checkSwiperChildrenLength() {
+		let wrapperAll = document.querySelectorAll('.swiper-wrapper');
+		if(wrapperAll.length) {
+			wrapperAll.forEach(wrapper => {
+				if(wrapper.children.length < 2) {
+					wrapper.closest('.swiper-container').classList.add('_one');
+				} else {
+					wrapper.closest('.swiper-container').classList.add('_multiple');
+				}
+			})
+		}
+	}
+
+	checkSwiperChildrenLength();
+
+	let home = document.querySelector('.home-page');
+    if(home) {
+        let anim1 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.header__logo',
+            translateY: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 600,
+            delay: 800,
+        })
+        .add({
+            targets:['.menu__link, .header__phone'],
+            opacity: [0, 1],
+            translateY: ['-100%', '0%'],
+            delay: (el, i) => 100 * i,
+            duration: 200,
+        }, '-=200')
+        .add({
+            targets: ['.promo__title', '.promo__subtitle', '.promo__group', '.promo__text'],
+            opacity: [0, 1],
+            translateX: ['-100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+		.add({
+            targets: '.promo__img',
+            opacity: [0, 1],
+            translateX: ['100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+		.add({
+            targets: '.promo__values-title',
+            opacity: [0, 1],
+            translateX: ['-100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+		.add({
+            targets:['.promo__values-list li'],
+            opacity: [0, 1],
+            translateX: ['-50%', '0%'],
+            delay: (el, i) => 100 * i,
+            duration: 400,
+        }, '-=200')
+
+        let anim2 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.promo-bg',
+            scale: [1.1, 1],
+            duration: 2000,
+            delay: 0,
+        })
+
+        let anim3 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.promo-bg__layer-1 img',
+            translateY: ['50px', '0px'],
+            duration: 2000,
+            delay: 0,
+        }).add({
+            targets: ['.promo-bg__layer-3 > img', '.promo-bg__dec-1 img', '.promo-bg__dec-2 img', '.promo-bg__dec-3 img', '.promo-bg__dec-4 img', '.promo-bg__dec-5 img',],
+            translateY: ['50px', '0px'],
+            duration: 2000,
+            delay: 0,
+        }, '-=1000').add({
+            targets: '.promo-bg__layer-2 img',
+            translateY: ['50px', '0px'],
+            duration: 2000,
+            delay: 0,
+        }, '-=1500')
+
+        window.addEventListener('load', function () {
+            anim1.play();
+            anim2.play();
+            anim3.play();
+        })
+    }
 });

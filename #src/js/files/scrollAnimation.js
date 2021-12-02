@@ -1,5 +1,5 @@
 
-const animItems = document.querySelectorAll('._anim-items');
+const animItems = document.querySelectorAll('._anime');
 
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);
@@ -19,7 +19,7 @@ if (animItems.length > 0) {
 				animItem.classList.add('_active');
 			} else {
 				if (!animItem.classList.contains('_anim-no-hide')) {
-					animItem.classList.remove('_active');
+					//animItem.classList.remove('_active');
 				}
 			}
 		}

@@ -1,0 +1,168 @@
+.tabs {
+    &__nav {
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__trigger {
+        flex: 1 1 auto;
+        min-height: 5.9rem;
+        display: flex;
+        align-items: flex-end;
+        padding: 1.5rem 4rem 1.4rem 4rem;
+        background-color: $mainColor;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2em;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+
+        @media (max-width: $md3+px) {
+            min-height: 35px;
+            padding: 9px 24px;
+            font-size: 14px;
+        }
+
+        @media (max-width: $md4+px) {
+            display: none;
+        }
+
+        &.active {
+            &:before {
+                position: absolute;
+                content: "";
+                width: 2rem;
+                height: 2rem;
+                display: block;
+                background-color: $mainColor;
+                position: absolute;
+                left: 3rem;
+                bottom: 0;
+                transform: translateY(50%) rotate(45deg);
+                z-index: -1;
+                transition: all 0.3s ease;
+            }
+        }
+
+        @media (min-width: 960px) {
+            &:hover {
+                background-color: $hover;
+
+                &:before {
+                    background-color: $hover;
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 1px;
+        }
+
+        &:nth-child(2) {
+            background-color: $mainColor2;
+
+            &:before {
+                background-color: $mainColor2;
+            }
+
+            @media (min-width: 960px) {
+                &:hover {
+                    background-color: $hover2;
+
+                    &:before {
+                        background-color: $hover2;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            background-color: $mainColor3;
+
+            &:before {
+                background-color: $mainColor3;
+            }
+
+            @media (min-width: 960px) {
+                &:hover {
+                    background-color: $hover3;
+
+                    &:before {
+                        background-color: $hover3;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        overflow: auto;
+
+        @media (min-width: 480px) {
+            display: none;
+        }
+
+        @media (max-width: $md4+px) {
+            margin-right: -20px;
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__content-label {
+        position: relative;
+        z-index: 2;
+        display: inline-flex;
+        align-items: flex-end;
+        min-height: 35px;
+        padding: 9px 24px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2em;
+        color: #fff;
+        min-width: 162px;
+        @media (min-width: 480px) {
+            display: none;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 2rem;
+            height: 2rem;
+            display: block;
+            background-color: $mainColor;
+            position: absolute;
+            left: 3rem;
+            bottom: 0;
+            transform: translateY(50%) rotate(45deg);
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        &.bg-secondary {
+            &:before {
+                background-color: $mainColor2;
+            }
+        }
+        &.bg-dark {
+            &:before {
+                background-color: $mainColor3;
+            }
+        }
+    }
+
+    & .main-table {
+        position: relative;
+        z-index: 1;
+    }
+}

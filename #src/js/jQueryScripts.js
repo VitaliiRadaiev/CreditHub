@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-
+  @@include('../common/rating/rating.js');
 
   $('img.img-svg').each(function () {
     var $img = $(this);

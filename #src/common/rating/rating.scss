@@ -5,24 +5,47 @@
 	
 	&.big {
 		& .rating-wrap {
-			width: 120px;
-			height: 20px;
+			width: 15rem;
+			height: 2.7rem;
 		}
 
 		& .rating__line {
-			font-size: 20px;
-			height: 21px;
+			font-size: 2.5rem;
+			height: 2.7rem;
 			color: #e4e4e4;
 		}
 
 		& .rating__activeline {
-			font-size: 20px;
-			height: 21px;
+			font-size: 2.5rem;
+			height: 2.7rem;
 		}
 
 		& .rating .star {
-			width: 24px;
-			height: 21px;
+			width: 2.5rem;
+			height: 2.7rem;
+		}
+
+		@media (max-width: $md2+px) {
+			& .rating-wrap {
+				width: 125px;
+				height: 21px;
+			}
+	
+			& .rating__line {
+				font-size: 21px;
+				height: 21px;
+				color: #e4e4e4;
+			}
+	
+			& .rating__activeline {
+				font-size: 21px;
+				height: 21px;
+			}
+	
+			& .rating .star {
+				width: 24px;
+				height: 21px;
+			}
 		}
 	}
 }

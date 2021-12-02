@@ -327,6 +327,100 @@ function trimString(el, stringLength = 0) {
 	}
 
 };
+	{
+    let tabsAll = document.querySelectorAll('.tabs');
+    if(tabsAll.length) {
+        tabsAll.forEach(tabs => {
+            let allTriggers = tabs.querySelectorAll('.tabs__trigger');
+            let allContent = tabs.querySelectorAll('.tabs__content');
+
+            allTriggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    let id = trigger.dataset.tab;
+                    trigger.classList.add('active');
+        
+                    allTriggers.forEach(t => {
+                        if(t === trigger) return;
+                        t.classList.remove('active');
+                        
+                    })
+
+                    allContent.forEach(content => {
+                        if(id === content.dataset.tab) {
+                            content.classList.add('active');
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    })
+                })
+            })
+        })
+    }
+};
+	{
+    let offerSlider = document.querySelector('.slider-offer');
+    if(offerSlider) {
+        let dataSlider = new Swiper(offerSlider.querySelector('.swiper-container'), {
+
+            // autoplay: {
+            //     delay: 6000,
+            //     disableOnInteraction: false,
+            // },
+        
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: true,
+            watchOverflow: true,
+            pagination: {
+            	el: offerSlider.querySelector('.swiper-pagination'),
+            	clickable: true,
+            },
+        });
+    }
+};
+	{
+    let reviewsSlider = document.querySelector('.reviews__slider');
+    if(reviewsSlider) {
+        let dataSlider = new Swiper(reviewsSlider.querySelector('.swiper-container'), {
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+
+            speed: 800,
+            loop: true,
+            pagination: {
+            	el: reviewsSlider.querySelector('.swiper-pagination'),
+            	clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                    autoHeight: true,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                }
+            },
+
+        });
+    }
+};
+
+	let wow = new WOW({
+		boxClass: '_anim',
+		offset: 7,
+		live: true,
+	})
+	wow.init();
 
 });
 
@@ -472,6 +566,43 @@ window.addEventListener('DOMContentLoaded', function () {
 		//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	}
 }());;
+	
+const animItems = document.querySelectorAll('._anime');
+
+if (animItems.length > 0) {
+	window.addEventListener('scroll', animOnScroll);
+	function animOnScroll() {
+		for (let index = 0; index < animItems.length; index++) {
+			const animItem = animItems[index];
+			const animItemHeight = animItem.offsetHeight;
+			const animItemOffset = offset(animItem).top;
+			const animStart = 4;
+
+			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+			if (animItemHeight > window.innerHeight) {
+				animItemPoint = window.innerHeight - window.innerHeight / animStart;
+			}
+
+			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+				animItem.classList.add('_active');
+			} else {
+				if (!animItem.classList.contains('_anim-no-hide')) {
+					//animItem.classList.remove('_active');
+				}
+			}
+		}
+	}
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	}
+
+	setTimeout(() => {
+		animOnScroll();
+	}, 300);
+};
 
 	function testWebP(callback) {
 
@@ -490,4 +621,107 @@ window.addEventListener('DOMContentLoaded', function () {
 			document.querySelector('body').classList.add('no-webp');
 		}
 	});
+
+	function checkSwiperChildrenLength() {
+		let wrapperAll = document.querySelectorAll('.swiper-wrapper');
+		if(wrapperAll.length) {
+			wrapperAll.forEach(wrapper => {
+				if(wrapper.children.length < 2) {
+					wrapper.closest('.swiper-container').classList.add('_one');
+				} else {
+					wrapper.closest('.swiper-container').classList.add('_multiple');
+				}
+			})
+		}
+	}
+
+	checkSwiperChildrenLength();
+
+	let home = document.querySelector('.home-page');
+    if(home) {
+        let anim1 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.header__logo',
+            translateY: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 600,
+            delay: 800,
+        })
+        .add({
+            targets:['.menu__link, .header__phone'],
+            opacity: [0, 1],
+            translateY: ['-100%', '0%'],
+            delay: (el, i) => 100 * i,
+            duration: 200,
+        }, '-=200')
+        .add({
+            targets: ['.promo__title', '.promo__subtitle', '.promo__group', '.promo__text'],
+            opacity: [0, 1],
+            translateX: ['-100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+		.add({
+            targets: '.promo__img',
+            opacity: [0, 1],
+            translateX: ['100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+		.add({
+            targets: '.promo__values-title',
+            opacity: [0, 1],
+            translateX: ['-100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+		.add({
+            targets:['.promo__values-list li'],
+            opacity: [0, 1],
+            translateX: ['-50%', '0%'],
+            delay: (el, i) => 100 * i,
+            duration: 400,
+        }, '-=200')
+
+        let anim2 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.promo-bg',
+            scale: [1.1, 1],
+            duration: 2000,
+            delay: 0,
+        })
+
+        let anim3 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.promo-bg__layer-1 img',
+            translateY: ['50px', '0px'],
+            duration: 2000,
+            delay: 0,
+        }).add({
+            targets: ['.promo-bg__layer-3 > img', '.promo-bg__dec-1 img', '.promo-bg__dec-2 img', '.promo-bg__dec-3 img', '.promo-bg__dec-4 img', '.promo-bg__dec-5 img',],
+            translateY: ['50px', '0px'],
+            duration: 2000,
+            delay: 0,
+        }, '-=1000').add({
+            targets: '.promo-bg__layer-2 img',
+            translateY: ['50px', '0px'],
+            duration: 2000,
+            delay: 0,
+        }, '-=1500')
+
+        window.addEventListener('load', function () {
+            anim1.play();
+            anim2.play();
+            anim3.play();
+        })
+    }
 });
