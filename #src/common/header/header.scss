@@ -6,8 +6,8 @@
     z-index: 48;
     transition: all 0.4s ease;
 
-    &.is-scroll {
-        background-color: #142236;
+    &.is-scroll, &.bg {
+        background-color: #1e2f51;
     }
 
     &__body {

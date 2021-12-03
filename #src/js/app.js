@@ -32,6 +32,7 @@ window.addEventListener('load', function () {
 	@@include('../common/tabs/tabs.js');
 	@@include('../common/offer/offer.js');
 	@@include('../common/reviews/reviews.js');
+	@@include('../common/quiz/quiz.js');
 
 	let wow = new WOW({
 		boxClass: '_anim',

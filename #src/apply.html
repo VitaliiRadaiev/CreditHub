@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Credit Hub"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{
+        "bg": "bg"
+    })
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page apply-page _padding-top">
+		<section class="hero">
+			<div class="hero__bg">
+					<img src="img/photo/apply-banner.jpg" alt="">
+			</div>
+			<div class="hero__body container">
+				<div class="hero__text-wrap">
+					<div class="breadcrumbs">
+						<div class="breadcrumbs__label">
+							You are here:
+						</div>
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="">Home</a>
+							</li>
+							<li>
+								<a href="">About us</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn-default">Back</a>
+					<h1 class="hero__title">
+						Let us help you find the right loan.
+					</h1>
+				</div>
+			</div>
+		</section>
+
+		<section class="quiz">
+			<form class="quiz__slider container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide quiz__item">
+							<h6 class="quiz__title">
+								Q. What is the purpose of the loan?
+							</h6>
+							<ul class="quiz__list">
+								<li>
+									<label class="quiz-radio-checkbox">
+										<input type="radio" name="q1">
+										<div class="quiz-radio-checkbox__icon">
+											<img src="img/icons/quiz-icon-1.svg" alt="">
+										</div>
+										<div class="quiz-radio-checkbox__text">I am buying a home</div>
+									</label>
+								</li>
+								<li>
+									<label class="quiz-radio-checkbox">
+										<input type="radio" name="q1">
+										<div class="quiz-radio-checkbox__icon">
+											<img src="img/icons/quiz-icon-2.svg" alt="">
+										</div>
+										<div class="quiz-radio-checkbox__text">I want to refinance</div>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-slide quiz__item">
+							<h6 class="quiz__title">
+								Lorem ipsum dolor sit amet.
+							</h6>
+							<ul class="quiz__list">
+								<li>
+									<label class="quiz-radio-checkbox">
+										<input type="radio" name="q2">
+										<div class="quiz-radio-checkbox__icon">
+											<img src="img/icons/quiz-icon-1.svg" alt="">
+										</div>
+										<div class="quiz-radio-checkbox__text">I am buying a home</div>
+									</label>
+								</li>
+								<li>
+									<label class="quiz-radio-checkbox">
+										<input type="radio" name="q2">
+										<div class="quiz-radio-checkbox__icon">
+											<img src="img/icons/quiz-icon-2.svg" alt="">
+										</div>
+										<div class="quiz-radio-checkbox__text">I want to refinance</div>
+									</label>
+								</li>
+								<li>
+									<label class="quiz-radio-checkbox">
+										<input type="radio" name="q2">
+										<div class="quiz-radio-checkbox__icon">
+											<img src="img/icons/quiz-icon-2.svg" alt="">
+										</div>
+										<div class="quiz-radio-checkbox__text">I want to refinance</div>
+									</label>
+								</li>
+							</ul>
+						</div>
+			
+						<div class="swiper-slide quiz__item">
+							<button class="btn-default" type="submit">SUBMIT</button>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</form>
+		</section>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+	@@include('_js-bottom.html',{})
+</body>
+
+</html>

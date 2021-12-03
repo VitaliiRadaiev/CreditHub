@@ -1,0 +1,127 @@
+.quiz {
+    &__slider {
+        & .swiper-container {
+            height: 61rem;
+
+            @media (max-width: 575.98px) {
+                height: auto;
+            }
+        }
+
+        & .swiper-pagination {
+
+            @media (max-width: 575.98px) {
+                bottom: 0;
+                top: 50px;
+            }
+
+            & .swiper-pagination-bullet {
+                height: 11px;
+                width: 11px;
+                margin: 10px 0;
+                background-color: $mainColor2;
+
+                @media (max-width: 575.98px) {
+                    margin: 0 3.5px;
+                    width: 9px;
+                    height: 9px;
+                }
+
+                &.swiper-pagination-bullet-active {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media (max-width: 575.98px) {
+            padding-top: 100px;
+            padding-bottom: 90px;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 1.2em;
+        margin-bottom: 4rem;
+
+        @media (max-width: $md1+px) {
+            font-size: 24px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & > li {
+            padding: 0 3rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    & .btn-default {
+        align-self: center;
+    }
+}
+
+.quiz-radio-checkbox {
+    display: block;
+    min-width: 20rem;
+    cursor: pointer;
+
+    & input {
+        display: none;
+
+        &:checked {
+            & ~ .quiz-radio-checkbox__icon {
+                background-color: #dcebf6;
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dcebf6;
+        height: 10.6rem;
+        width: 10.6rem;
+        border-radius: 50%;
+        margin: 0 auto 2.6rem;
+        transition: all .3s ease;
+
+        @media (max-width: $md1+px) {
+            height: 86px;
+            width: 86px;
+            margin-bottom: 21px;
+        }
+
+        & img,
+        & svg {
+            max-height: 4.3rem;
+            width: auto;
+            display: block;
+            pointer-events: none;
+            @media (max-width: $md1+px) {
+                max-height: 35px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2em;
+    }
+}
