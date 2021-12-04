@@ -179,7 +179,7 @@ textarea {
 		padding-right: 40px;
 	}
 
-	@media (max-width: $md3+px) {
+	@media (max-width: 575.98px) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -194,7 +194,7 @@ textarea {
 		padding-right: 40px;
 	}
 
-	@media (max-width: $md3+px) {
+	@media (max-width: 575.98px) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -377,6 +377,26 @@ button.btn-default {
 	@media (max-width: $md1+px) {
 		font-size: 15px;
 	}
+	@media (max-width: $md4+px) {
+		font-size: 13px;
+	}
+
+	&.text-content--big-text {
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 1.5em;
+
+		@media (max-width: $md1+px) {
+			font-size: 22px;
+		}
+
+		@media (max-width: $md3+px) {
+			font-size: 18px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 17px;
+		}
+	}
 
 	& h1 {
 	}
@@ -390,6 +410,10 @@ button.btn-default {
 	& h5 {
 	}
 	& h6 {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.2em;
+		margin-bottom: 0.4em;
 	}
 
 	& p {
@@ -397,12 +421,25 @@ button.btn-default {
 	}
 
 	& ul {
+		margin-bottom: 1.66em;
+
+		& > li {
+			&:not(:last-child) {
+				margin-bottom: 0.4em;
+			}
+		}
 	}
 
 	& ol {
 	}
 
 	& figure {
+		margin-bottom: 2.2em;
+		& img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
@@ -424,4 +461,5 @@ button.btn-default {
 // ==== PAGES =====================================================
 @import "pages/home";
 @import "pages/apply";
+@import "pages/about";
 // ==== AND PAGES =====================================================
