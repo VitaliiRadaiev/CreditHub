@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Credit Hub</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	<header class="header bg">
+    <div class="header__body">
+        <div class="header__logo">
+            <a href="#">
+                <img src="img/logo/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="header__menu menu">
+            <div class="menu__head">
+                <div class="menu__logo">
+                    <a href="#">
+                        <img src="img/logo/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="menu__close"><span></span></div>
+            </div>
+            <div class="menu__scroll-wrap">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#" class="menu__link current-menu-item">
+                            <span>01</span>
+                            Free Property Report
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>02</span>
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>03</span>
+                            Loans
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>04</span>
+                            Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>05</span>
+                            Resources
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">
+                            <span>06</span>
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="tel:1300782944" class="header__phone">
+            <img class="img-svg" src="img/icons/phone.svg" alt="">
+            1300 782 944
+        </a>
+        <div class="header__burger">
+            <img src="img/icons/burger.svg" alt="">
+        </div> 
+    </div>
+</header>
+
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page conveyance-page _padding-top">
+		<section class="hero hero--conveyance">
+			<div class="hero__bg">
+				<img src="img/photo/conveyance-banner.jpg" alt="">
+			</div>
+			<div class="hero__body container">
+				<div class="hero__text-wrap">
+					<div class="breadcrumbs">
+						<div class="breadcrumbs__label">
+							You are here:
+						</div>
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="">Home</a>
+							</li>
+							<li>
+								<a href="">Conveyance</a>
+							</li>
+						</ul>
+					</div>
+					<h1 class="hero__title">
+						Need an experienced conveyancer?
+					</h1>
+					<div class="hero__btn-group">
+						<a href="#" class="btn-default">Buying a property</a>
+						<a href="#" class="btn-default bg-secondary">Selling a property</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="conveyancing-hub">
+			<div class="conveyancing-hub__body container">
+				<h2 class="conveyancing-hub__title title-2">We’re Conveyancing Hub</h2>
+				<div class="conveyancing-hub__subtitle subtitle">
+					We will guide you through every point in the purchase process, ensuring that you
+					stay prepared and guarded, while also making the settlement as smooth and hassle-free as possible.
+				</div>
+				<ul class="conveyancing-hub__list card-list">
+					<li>
+						<a href="#" class="calculator-card">
+							<div class="calculator-card__wrap">
+								<div class="calculator-card__icon">
+									<img src="img/icons/advantages-card-icon-1.svg" alt="">
+								</div>
+								<div class="calculator-card__title">Experienced and trusted conveyancer</div>
+								<div class="calculator-card__text">
+									Our licensed conveyancers have all the knowledge to handle almost every possible
+									scenario that comes up in the buying process for you, and we work tirelessly towards
+									smooth property settlements.
+								</div>
+							</div>
+							<div class="calculator-card__btn">
+								Read more
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="calculator-card">
+							<div class="calculator-card__wrap">
+								<div class="calculator-card__icon">
+									<img src="img/icons/questions-icon.svg" alt="">
+								</div>
+								<div class="calculator-card__title">Advanced and Convenient customer portal</div>
+								<div class="calculator-card__text">
+									We’re leading the way conveyancing is done by our custom-made customer portal, you
+									will get updates anytime, anywhere so that you stay prepared and informed. Plus,
+									free built-in resources for all our customers.
+								</div>
+							</div>
+							<div class="calculator-card__btn">
+								Read more
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="calculator-card">
+							<div class="calculator-card__wrap">
+								<div class="calculator-card__icon">
+									<img src="img/icons/calculator-card-icon-3.svg" alt="">
+								</div>
+								<div class="calculator-card__title">Transparent and Stress-free process</div>
+								<div class="calculator-card__text">
+									Conveyancing is what we do every day, We manage the seller, the real estate agent,
+									the bank or broker, any settlement agents required on your behalf in the entire
+									process to make sure your transaction is transparent and stress-free.
+								</div>
+							</div>
+							<div class="calculator-card__btn">
+								Read more
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="services__body container">
+				<h4 class="services__title title-4">
+					Our other Services
+				</h4>
+				<ul class="services__list">
+					<li>
+						<div class="services__list-item">
+							<div class="services__img ibg">
+								<img src="img/photo/services-img-1.jpg" alt="">
+							</div>
+							<div class="services__text text-content">
+								<h6>Subdivision</h6>
+								<p>
+									If subdividing your land is on your mind, we’re here to help. Whether it is liaising
+									with your surveyor and lender or preparing the appropriate documentation for lodging
+									the plan with the Lands Title Office, we are there to take total control of the
+									process so that you can sit back and relax.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="services__list-item">
+							<div class="services__img ibg">
+								<img src="img/photo/services-img-2.jpg" alt="">
+							</div>
+							<div class="services__text text-content">
+								<h6>Transfer of ownership</h6>
+								<p>
+									New partners, separations, refinancing and liability issues are common reasons for
+									why a Title of a property might need to be altered. Our conveyancer is well equipped
+									to assist and make sure there will be a smooth transfer of ownership between both
+									parties.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="services__list-item">
+							<div class="services__img ibg">
+								<img src="img/photo/services-img-3.jpg" alt="">
+							</div>
+							<div class="services__text text-content">
+								<h6>Business Conveyancing</h6>
+								<p>
+									If you are planning to purchase or sell a business, professional legal advice is
+									crucial. Our conveyancers are well-equipped with a thorough knowledge of Australian
+									business laws. We take care of all your needs, starting from the Contract of Sale of
+									the business to Settlement, and guide you through the entire process.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="services__list-item">
+							<div class="services__img ibg">
+								<img src="img/photo/services-img-4.jpg" alt="">
+							</div>
+							<div class="services__text text-content">
+								<h6>Commercial Property Sale and Purchase</h6>
+								<p>
+									Commercial conveyancing is not the same as that of residential properties and that’s
+									why you require the expert advice. We ensure maximum legal protection as we follow
+									the process – prepare the Contract of Purchase, procure all pre-purchase documents,
+									negotiate on your behalf, secure Exchange of Contracts, and finally reach
+									Settlement.
+								</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="bottom container">
+				<a href="#" class="btn-default">Request a quote</a>
+			</div>
+		</section>
+
+		<section class="calculators pt-0">
+			<div class="calculators__body container">
+				<h2 class="calculators__title title-2">Helpful calclators</h2>
+				<div class="calculators__subtitle subtitle">Try our free and easy-to-use calculators.</div>
+				<ul class="calculators__list">
+					<li>
+						<a href="#" class="calculator-card">
+							<div class="calculator-card__wrap">
+								<div class="calculator-card__icon">
+									<img src="img/icons/advantages-card-icon-1.svg" alt="">
+								</div>
+								<div class="calculator-card__title">Stamp duty</div>
+								<div class="calculator-card__text">
+									How Much Stamp Duty Will I Have To Pay?
+								</div>
+							</div>
+							<div class="calculator-card__btn">
+								Read more
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="calculator-card">
+							<div class="calculator-card__wrap">
+								<div class="calculator-card__icon">
+									<img src="img/icons/questions-icon.svg" alt="">
+								</div>
+								<div class="calculator-card__title">Property Buying Cost</div>
+								<div class="calculator-card__text">
+									How much Can Property Buying Cost?
+								</div>
+							</div>
+							<div class="calculator-card__btn">
+								Read more
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="calculator-card">
+							<div class="calculator-card__wrap">
+								<div class="calculator-card__icon">
+									<img src="img/icons/calculator-card-icon-3.svg" alt="">
+								</div>
+								<div class="calculator-card__title">Property Selling Cost</div>
+								<div class="calculator-card__text">
+									How much Can Property Selling Cost?
+								</div>
+							</div>
+							<div class="calculator-card__btn">
+								Read more
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="advantages__body container-sm">
+				<h2 class="advantages__title title-2 ">
+					Compare us with other
+					conveyancers or solicitors
+				</h2>
+				<div class="advantages__subtitle subtitle ">
+					At Credit Hub we have been serving our customers for years, we have learned and dedicated ourself to
+					always improving and adapting with time. Feel the difference with our service-oriented approach and
+					advance technology. And we will keep doing this…
+				</div>
+
+				<ul class="advantages__list">
+					<li class=" ">
+						<div class="advantages-card">
+							<div class="advantages-card__icon">
+								<img src="img/icons/advantages-card-icon-1.svg" alt="">
+							</div>
+							<div class="advantages-card__title">Us</div>
+							<div class="advantages-card__text">Company founded by experienced banker, over 20 years’
+								experience in the industry. We have a team of fully trained accredited dedicated manager
+								and support.</div>
+						</div>
+					</li>
+					<li class=" ">
+						<div class="advantages-card">
+							<div class="advantages-card__icon">
+								<img src="img/icons/advantages-card-icon-2.svg" alt="">
+							</div>
+							<div class="advantages-card__title">Support</div>
+							<div class="advantages-card__text">
+								Industry-first automated customer service portal and support, portfolio management by
+								dedicated managers with ongoing account support.
+							</div>
+						</div>
+					</li>
+					<li class=" ">
+						<div class="advantages-card">
+							<div class="advantages-card__icon">
+								<img src="img/icons/advantages-card-icon-3.svg" alt="">
+							</div>
+							<div class="advantages-card__title">Resources</div>
+							<div class="advantages-card__text">
+								Experienced team to help you with your need. Free property report and Finance health
+								check for our customers. Latest industry updates and news access.
+							</div>
+						</div>
+					</li>
+					<li class=" ">
+						<div class="advantages-card">
+							<div class="advantages-card__icon">
+								<img src="img/icons/advantages-card-icon-4.svg" alt="">
+							</div>
+							<div class="advantages-card__title">Rewards</div>
+							<div class="advantages-card__text">
+								Join the exclusive club and be rewarded discounts on other company services. Get
+								cashback rewards for our referral program.
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom container">
+				<a href="#" class="btn-default">Join us now</a>
+			</div>
+		</section>
+
+		<section class="cta">
+			<div class="cta__body container">
+				<div class="cta__col cta__col--1">
+					<div class="cta__icon">
+						<img src="img/icons/cta-icon-1.svg" alt="">
+					</div>
+					<div class="cta__text-wrap">
+						<h5 class="cta__title title-5">Ready to start</h5>
+						<div class="cta__text text-content">
+							Let’s start with a few details, and we’ll get back to you with a free consultation and quote.
+						</div>
+						<a href="#" class="btn-default bg-dark">Request a quote</a>
+					</div>
+				</div>
+				<div class="cta__col cta__col--2">
+					<div class="cta__icon">
+						<img src="img/icons/cta-icon-2.svg" alt="">
+					</div>
+					<div class="cta__text-wrap">
+						<h5 class="cta__title title-5">Let’s talk</h5>
+						<div class="cta__text text-content">
+							We love talking to our customers, so give us a call on.
+						</div>
+						<a href="#" class="btn-default bg-dark">
+							1300 782 944
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	<footer class="footer">
+    <div class="footer__row-1">
+        <div class="footer__body container">
+            <div class="footer__col-1">
+                <div class="footer__title">Our Group Services</div>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Insurance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Property Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Conveyancing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col-2">
+                <div class="footer__title">Media and Post </div>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Credit Hub Customer Portal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            FREE Loan Health Check by
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Credit Hub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Should you refinance in 2021?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Do I need a conveyancer before
+                            making an offer?
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col-3">
+                <div class="footer__title">Industry Memberships</div>
+                <ul class="footer__logo-list">
+                    <li>
+                        <img src="img/photo/footer-logo-1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/photo/footer-logo-2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/photo/footer-logo-3.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col-4">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="img/logo/credithub_logo_white.png" alt="">
+                    </a>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/facebook.svg" alt="" class="img-svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/linkedin.svg" alt="" class="img-svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/youtube.svg" alt="" class="img-svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__row-2">
+        <div class="container">
+            <ul class="footer__nav">
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Credit Guide
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__row-3">
+        <div class="footer__bottom container">
+            <div class="footer__bottom-col-1">
+                <p>Credit Hub is proudly Australian owned and operated.</p>
+                <p class="copy">© 2021 Credit Hub Australia ABN: 69138938646. Australian Credit Licence Number: 472959</p>
+            </div>
+            <div class="footer__bottom-col-2">
+                <p>Web design Melbourne - Digital Pieces</p>
+            </div>
+        </div>
+    </div>
+</footer>
+	<!-- == // FOOTER ================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+</body>
+
+</html>

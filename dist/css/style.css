@@ -5446,6 +5446,12 @@ textarea {
   margin-bottom: 6.1rem;
 }
 
+.calculators__subtitle {
+  text-align: center;
+  max-width: 70rem;
+  margin: 0 auto 7.3rem;
+}
+
 .calculators__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5470,12 +5476,24 @@ textarea {
   background-color: #1eadaf;
 }
 
+.calculators__list > li:nth-child(4n+2) .calculator-card .calculator-card__title {
+  color: #1eadaf;
+}
+
 .calculators__list > li:nth-child(4n+3) .calculator-card .calculator-card__btn {
   background-color: #1b293f;
 }
 
+.calculators__list > li:nth-child(4n+3) .calculator-card .calculator-card__title {
+  color: #1b293f;
+}
+
 .calculators__list > li:nth-child(4n+4) .calculator-card .calculator-card__btn {
   background-color: #3989a1;
+}
+
+.calculators__list > li:nth-child(4n+4) .calculator-card .calculator-card__title {
+  color: #3989a1;
 }
 
 .calculators__bottom {
@@ -5511,6 +5529,8 @@ textarea {
   border: 1px solid #dcebf6;
   min-height: 375px;
   text-align: center;
+  color: #1b293f;
+  background-color: #fff;
 }
 
 .calculator-card__wrap {
@@ -7399,6 +7419,10 @@ hr {
   background: linear-gradient(90deg, #1f2f51 30%, #203c6c 70%);
 }
 
+.hero.hero--conveyance .hero__title {
+  margin-left: 0;
+}
+
 .hero__bg {
   position: absolute;
   top: 0;
@@ -7438,6 +7462,12 @@ hr {
   max-width: 50.4rem;
   margin-bottom: 3rem;
   margin-left: 7.7rem;
+}
+
+.hero__btn-group > * {
+  margin-bottom: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .breadcrumbs {
@@ -7589,6 +7619,252 @@ hr {
   margin-bottom: 13.6rem;
 }
 
+.conveyance-page .calculators {
+  position: relative;
+  padding-bottom: 124px;
+}
+
+.conveyance-page .calculators:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 26rem);
+  background-color: #f1faff;
+  z-index: -1;
+}
+
+.conveyance-page .calculators .calculators__title {
+  margin-bottom: 1.5rem;
+}
+
+.conveyance-page .advantages {
+  padding-bottom: 0;
+}
+
+.conveyancing-hub {
+  padding-top: 14.6rem;
+  padding-bottom: 13.5rem;
+}
+
+.conveyancing-hub__body {
+  text-align: center;
+}
+
+.conveyancing-hub__title {
+  max-width: 74rem;
+  margin: 0 auto 1.3rem;
+}
+
+.conveyancing-hub__subtitle {
+  max-width: 74rem;
+  margin: 0 auto 5.5rem;
+}
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -10px;
+}
+
+.card-list > li {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.card-list > li:nth-child(4n+2) .calculator-card .calculator-card__btn {
+  background-color: #1eadaf;
+}
+
+.card-list > li:nth-child(4n+2) .calculator-card .calculator-card__title {
+  color: #1eadaf;
+}
+
+.card-list > li:nth-child(4n+3) .calculator-card .calculator-card__btn {
+  background-color: #1b293f;
+}
+
+.card-list > li:nth-child(4n+3) .calculator-card .calculator-card__title {
+  color: #1b293f;
+}
+
+.card-list > li:nth-child(4n+4) .calculator-card .calculator-card__btn {
+  background-color: #3989a1;
+}
+
+.card-list > li:nth-child(4n+4) .calculator-card .calculator-card__title {
+  color: #3989a1;
+}
+
+.services__body {
+  padding-top: 10px;
+  padding-bottom: 27px;
+  position: relative;
+}
+
+.services__body:before {
+  position: absolute;
+  content: "";
+  left: 56%;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: #f1faff;
+  z-index: -1;
+}
+
+.services__title {
+  margin-bottom: 6.3rem;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__list > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-bottom: 60px;
+  padding-right: 50px;
+}
+
+.services__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__img {
+  height: 31.5rem;
+  width: 25rem;
+  margin-right: 5.2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.services__text {
+  padding-top: 4.6rem;
+  max-width: 28.2rem;
+}
+
+.services__text.text-content {
+  font-size: 14px;
+}
+
+.services__text.text-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.cta__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cta__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
+  color: #fff;
+  padding-top: 8.3rem;
+  padding-right: 4rem;
+  padding-bottom: 8.3rem;
+  min-height: 37.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cta__col--1:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  background-color: #2285c3;
+}
+
+.cta__col--2 {
+  padding-left: 14.5rem;
+}
+
+.cta__col--2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  background-color: #1eadaf;
+}
+
+.cta__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 5.3rem;
+  height: 12.8rem;
+  width: 12.8rem;
+}
+
+.cta__icon img {
+  max-width: 100%;
+  max-height: 7.8rem;
+  width: auto;
+  height: auto;
+}
+
+.cta__text-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 33.1rem;
+}
+
+.cta__title {
+  margin-bottom: 9px;
+}
+
+.cta__text {
+  margin-bottom: 3rem;
+}
+
+.cta__text.text-content {
+  font-size: 14px;
+}
+
 @media (min-width: 480px) {
   .footer__nav {
     display: -webkit-box;
@@ -7717,6 +7993,10 @@ hr {
   .pre-qualified__steps-list > li:not(:last-child) {
     margin-right: 5.2rem;
   }
+
+  .hero__btn-group > *:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -7842,6 +8122,18 @@ hr {
 
   .breadcrumbs__list > li a:hover {
     opacity: 0.6;
+  }
+
+  .card-list > li:nth-child(4n+2) .calculator-card:hover .calculator-card__btn {
+    background-color: #28cacd;
+  }
+
+  .card-list > li:nth-child(4n+3) .calculator-card:hover .calculator-card__btn {
+    background-color: #4a5567;
+  }
+
+  .card-list > li:nth-child(4n+4) .calculator-card:hover .calculator-card__btn {
+    background-color: #61a2b4;
   }
 }
 
@@ -8078,6 +8370,22 @@ hr {
   .about__text-wrap {
     max-width: 321px;
   }
+
+  .conveyance-page .calculators {
+    padding-bottom: 88px;
+  }
+
+  .conveyance-page .calculators .calculators__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+  }
+
+  .card-list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -8197,6 +8505,68 @@ hr {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 calc(50% - 51px);
             flex: 0 1 calc(50% - 51px);
+  }
+
+  .services__body:before {
+    display: none;
+  }
+
+  .services__title {
+    text-align: center;
+    margin-bottom: 39px;
+  }
+
+  .services__list > li {
+    padding-right: 0;
+  }
+
+  .services__list > li:nth-child(4n+3),
+  .services__list > li:nth-child(4n+4) {
+    position: relative;
+    padding-top: 52px;
+  }
+
+  .services__list > li:nth-child(4n+3):before,
+  .services__list > li:nth-child(4n+4):before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100%;
+    width: 200vw;
+    background-color: #f1faff;
+    z-index: -1;
+  }
+
+  .services__list-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .services__img {
+    width: 74px;
+    height: 93px;
+    margin: 0 auto 26px;
+  }
+
+  .services__text {
+    text-align: center;
+    max-width: 198px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .cta__col--2 {
+    padding-left: 40px;
+    padding-right: 0;
   }
 }
 
@@ -8577,6 +8947,16 @@ hr {
     margin: 0 auto 28px;
   }
 
+  .hero.hero--conveyance .hero__title {
+    margin-top: 51px;
+  }
+
+  .hero.hero--conveyance .hero__bg img {
+    -webkit-transform: translateX(-18%);
+        -ms-transform: translateX(-18%);
+            transform: translateX(-18%);
+  }
+
   .hero__bg img {
     -webkit-transform: translateX(-21%);
         -ms-transform: translateX(-21%);
@@ -8591,6 +8971,20 @@ hr {
     margin-top: 31px;
     margin-bottom: 20px;
     font-size: 26px;
+  }
+
+  .hero__btn-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero__btn-group > * {
+    min-width: 195px;
   }
 
   .breadcrumbs {
@@ -8623,6 +9017,70 @@ hr {
 
   .text-b.text-b--col-2 .col:nth-child(2) {
     padding-right: 0;
+  }
+
+  .conveyance-page .calculators {
+    padding-bottom: 70px;
+  }
+
+  .conveyance-page .calculators .calculators__body {
+    max-width: none;
+  }
+
+  .conveyance-page .calculators .calculators__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    max-width: none;
+  }
+
+  .conveyancing-hub {
+    padding-top: 83px;
+    padding-bottom: 82px;
+  }
+
+  .conveyancing-hub__body.container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .conveyancing-hub__title {
+    max-width: 403px;
+  }
+
+  .conveyancing-hub__subtitle {
+    max-width: 403px;
+  }
+
+  .card-list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    max-width: 189px;
+    margin-bottom: 15px;
+  }
+
+  .cta__col {
+    text-align: center;
+    display: block;
+  }
+
+  .cta__col--1 {
+    padding-right: 40px;
+  }
+
+  .cta__icon {
+    height: 74px;
+    width: 74px;
+    margin: 0 auto 20px;
+  }
+
+  .cta__icon img {
+    max-height: 45px;
+  }
+
+  .cta__text-wrap {
+    margin: 0 auto;
   }
 }
 
@@ -8833,6 +9291,38 @@ hr {
     background: linear-gradient(0deg, #1f2f51 30%, #1f4581 70%);
   }
 
+  .hero.hero--conveyance .hero__bg {
+    position: absolute;
+    height: 100%;
+  }
+
+  .hero.hero--conveyance .hero__bg img {
+    -webkit-transform: translateX(-60%);
+        -ms-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+
+  .hero.hero--conveyance .hero__body {
+    min-height: 484px;
+    padding-bottom: 57px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .hero.hero--conveyance .hero__body .btn-default {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
   .hero__bg {
     position: relative;
     height: 344px;
@@ -8865,6 +9355,12 @@ hr {
   .hero__title {
     margin-left: 0;
     margin-top: 64px;
+  }
+
+  .hero__btn-group > * {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .about-hero__body {
@@ -8900,6 +9396,46 @@ hr {
 
   .about__text-wrap {
     max-width: none;
+  }
+
+  .conveyance-page .calculators .calculators__body.container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .services__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .services__list > li:nth-child(4n+4) {
+    padding-top: 0;
+  }
+
+  .cta__body {
+    display: block;
+  }
+
+  .cta__body.container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .cta__col {
+    min-height: 434px;
+    padding-top: 67px;
+    padding-bottom: 67px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .cta__col::before {
+    left: 50% !important;
+    right: auto !important;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -9079,6 +9615,29 @@ hr {
 
   .about-hero__video {
     height: 180px;
+  }
+
+  .conveyance-page .calculators {
+    padding-bottom: 60px;
+  }
+
+  .conveyance-page .calculators .calculators__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    max-width: 189px;
+  }
+
+  .conveyancing-hub {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .card-list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    max-width: 211px;
   }
 }
 
