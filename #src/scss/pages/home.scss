@@ -110,6 +110,10 @@
         padding: 1.5rem;
         width: 25%;
 
+        @media (max-width: $md1+px) {
+            font-size: 13px;
+        }
+
         @media (max-width: $md3+px) {
             font-size: 13px;
             height: 75px;
@@ -119,12 +123,16 @@
     & td {
         height: 9rem;
         text-align: center;
-        padding: 1.5rem;
+        padding: 1.5rem 4rem;
         width: 25%;
 
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.2em;
+
+        @media (max-width: $md1+px) {
+            font-size: 11px;
+        }
 
         @media (max-width: $md3+px) {
             font-size: 11px;

@@ -7147,7 +7147,7 @@ hr {
 .main-table td {
   height: 9rem;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.5rem 4rem;
   width: 25%;
   font-size: 1.3rem;
   font-weight: 400;
@@ -8335,6 +8335,14 @@ hr {
   .quiz-radio-checkbox__icon img,
   .quiz-radio-checkbox__icon svg {
     max-height: 35px;
+  }
+
+  .main-table th {
+    font-size: 13px;
+  }
+
+  .main-table td {
+    font-size: 11px;
   }
 
   .advantages-card__icon {
