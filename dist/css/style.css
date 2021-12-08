@@ -6567,7 +6567,7 @@ textarea {
           flex: 0 1 20%;
   height: 12rem;
   text-align: center;
-  padding: 15px;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8461,6 +8461,18 @@ hr {
 
   .pre-qualified__steps-text {
     font-size: 15px;
+  }
+
+  .advantages__title {
+    max-width: 520px;
+  }
+
+  .advantages__subtitle {
+    max-width: 520px;
+  }
+
+  .advantages-card {
+    padding-bottom: 78px;
   }
 
   .advantages-card__icon {
