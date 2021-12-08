@@ -8429,12 +8429,24 @@ hr {
     max-height: 35px;
   }
 
+  .main-table__value {
+    font-size: 20px;
+  }
+
   .main-table th {
     font-size: 13px;
   }
 
   .main-table td {
     font-size: 11px;
+  }
+
+  .pre-qualified__steps-num {
+    font-size: 28px;
+  }
+
+  .pre-qualified__steps-text {
+    font-size: 15px;
   }
 
   .advantages-card__icon {
@@ -8901,10 +8913,6 @@ hr {
     margin-bottom: 46px;
   }
 
-  .main-table__value {
-    font-size: 20px;
-  }
-
   .main-table th {
     font-size: 13px;
     height: 75px;
@@ -8964,14 +8972,6 @@ hr {
 
   .pre-qualified__steps-line {
     margin-bottom: 24px;
-  }
-
-  .pre-qualified__steps-num {
-    font-size: 28px;
-  }
-
-  .pre-qualified__steps-text {
-    font-size: 15px;
   }
 
   .advantages {
