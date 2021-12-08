@@ -170,9 +170,9 @@ textarea {
 }
 
 .container {
-	max-width: 1460px;
+	max-width: 1490px;
 	margin: 0 auto;
-	padding: 0 65px;
+	padding: 0 80px;
 
 	@media (max-width: $md2+px) {
 		padding-left: 40px;
@@ -219,6 +219,10 @@ textarea {
 	line-height: 1.2115em;
 	margin-top: 0;
 	margin-bottom: 0;
+
+	@media (max-width: $md1+px) {
+		font-size: 31px;
+	}
 
 	@media (max-width: $md3+px) {
 		font-size: 28px;

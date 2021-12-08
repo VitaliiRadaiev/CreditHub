@@ -5099,9 +5099,9 @@ textarea {
 }
 
 .container {
-  max-width: 1460px;
+  max-width: 1490px;
   margin: 0 auto;
-  padding: 0 65px;
+  padding: 0 80px;
 }
 
 .container-sm {
@@ -8181,6 +8181,10 @@ hr {
 }
 
 @media (max-width: 1267.98px) {
+  .title-1 {
+    font-size: 31px;
+  }
+
   .title-4 {
     font-size: 26px;
   }
@@ -8297,10 +8301,61 @@ hr {
     height: 18px;
   }
 
+  .promo__body {
+    padding-top: 64px;
+    padding-bottom: 61px;
+  }
+
+  .promo__subtitle {
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+
+  .promo__group {
+    margin-bottom: 9px;
+  }
+
+  .promo__btn {
+    min-height: 60px;
+    min-width: 170px;
+    padding: 12px 29px;
+  }
+
+  .promo__btn p:first-child {
+    font-size: 15px;
+  }
+
+  .promo__btn p:last-child {
+    font-size: 10px;
+  }
+
+  .promo__text {
+    font-size: 10px;
+    margin-bottom: 31px;
+  }
+
+  .promo__img {
+    width: 530px;
+  }
+
+  .promo__img img {
+    -webkit-transform: translateX(11.5%);
+        -ms-transform: translateX(11.5%);
+            transform: translateX(11.5%);
+  }
+
+  .promo__values-title {
+    font-size: 17px;
+  }
+
   .google-img {
     right: 11px;
     bottom: 10px;
     width: 114px;
+  }
+
+  .values-circle {
+    font-size: 6px;
   }
 
   .offer__bottom-title.title-5 {
@@ -8461,10 +8516,6 @@ hr {
 
   .promo__subtitle {
     font-size: 15px;
-  }
-
-  .promo__text {
-    font-size: 10px;
   }
 
   .promo__img {

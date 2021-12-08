@@ -23,6 +23,11 @@
         padding-top: 12rem;
         padding-bottom: 10rem;
 
+        @media (max-width: $md1+px) {
+            padding-top: 64px;
+            padding-bottom: 61px;
+        }
+
         @media (max-width: 575.98px) {
             padding-top: 58px;
             padding-bottom: 0;
@@ -51,6 +56,11 @@
         line-height: 1.55em;
         margin-bottom: 3rem;
 
+        @media (max-width: $md1+px) {
+            font-size: 15px;
+            margin-bottom: 13px;
+        }
+
         @media (max-width: $md2+px) {
             font-size: 15px;
         }
@@ -73,6 +83,10 @@
         display: flex;
         margin-bottom: 2rem;
 
+        @media (max-width: $md1+px) {
+            margin-bottom: 9px;
+        }
+
         @media (max-width: 575.98px) {
             flex-direction: column;
         }
@@ -86,6 +100,12 @@
         padding: 2em 5.2em 2em 3.8em;
         color: #fff;
         transition: all 0.3s ease;
+
+        @media (max-width: $md1+px) {
+            min-height: 60px;
+            min-width: 170px;
+            padding: 12px 29px;
+        }
 
         @media (max-width: 575.98px) {
             align-self: flex-start;
@@ -130,6 +150,10 @@
             font-weight: 500;
             line-height: 1.192em;
 
+            @media (max-width: $md1+px) {
+                font-size: 15px;
+            }
+
             @media (max-width: 575.98px) {
                 font-size: 15px;
             }
@@ -138,6 +162,10 @@
             font-size: 1.6em;
             font-weight: 400;
             line-height: 1.375em;
+
+            @media (max-width: $md1+px) {
+                font-size: 10px;
+            }
 
             @media (max-width: 575.98px) {
                 font-size: 10px;
@@ -172,8 +200,9 @@
         margin-bottom: 5.6rem;
         color: rgba(#fff, 0.2);
 
-        @media (max-width: $md2+px) {
+        @media (max-width: $md1+px) {
             font-size: 10px;
+            margin-bottom: 31px;
         }
 
         @media (max-width: 575.98px) {
@@ -187,6 +216,14 @@
         bottom: 0;
         width: 88.2rem;
         z-index: -1;
+
+        @media (max-width: $md1+px) {
+            width: 530px;
+
+            & img {
+                transform: translateX(11.5%);
+            }
+        }
 
         & img {
             width: 100%;
@@ -232,6 +269,10 @@
         letter-spacing: normal;
         line-height: 1.21em;
         margin-bottom: 2.7rem;
+
+        @media (max-width: $md1+px) {
+            font-size: 17px;
+        }
 
         @media (max-width: 575.98px) {
             text-align: center;
@@ -350,6 +391,10 @@
     position: relative;
     text-align: center;
     color: #fff;
+
+    @media (max-width: $md1+px) {
+        font-size: 6px;
+    }
 
     @media (max-width: 575.98px) {
         color: #173042;
