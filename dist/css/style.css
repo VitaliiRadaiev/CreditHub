@@ -8750,10 +8750,6 @@ hr {
     padding: 50px 0 80px;
   }
 
-  .calculators__body {
-    max-width: 440px;
-  }
-
   .calculators__title {
     margin-bottom: 34px;
   }
@@ -8862,6 +8858,10 @@ hr {
     margin-bottom: 21px;
   }
 
+  .offer__bottom-title.title-5 {
+    font-size: 24px;
+  }
+
   .offer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -8871,6 +8871,12 @@ hr {
 
   hr {
     width: 50px;
+  }
+
+  .slider-offer .swiper-pagination .swiper-pagination-bullet {
+    height: 8px;
+    width: 8px;
+    margin: 0 2.5px;
   }
 
   .slider-offer__col-1 {
@@ -8910,6 +8916,9 @@ hr {
     display: block;
     text-align: center;
     margin-bottom: 24px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .slider-offer__values {
