@@ -481,6 +481,9 @@
 
         @media (max-width: $md1+px) {
             font-size: 16px;
+            max-width: 68%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -535,9 +538,17 @@
         flex-direction: column;
         justify-content: center;
 
+        @media (max-width: $md1+px) {
+            display: block;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            min-height: 520px;
+        }
+
         @media (max-width: $md3+px) {
             padding-top: 53px;
             padding-bottom: 84px;
+            min-height: auto;
         }
 
         @media (max-width: 575.98px) {
@@ -560,7 +571,7 @@
         margin-left: 2.15rem;
 
         @media (max-width: $md1+px) {
-            max-width: 292px;
+            max-width: 302px;
             margin-left: 74px;
         }
 
@@ -588,6 +599,10 @@
         padding-top: 11.7rem;
         padding-bottom: 11.7rem;
         position: relative;
+
+        @media (max-width: $md1+px) {
+            width: 295px;
+        }
 
         @media (max-width: $md3+px) {
             width: 255px;
