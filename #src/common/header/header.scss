@@ -10,6 +10,12 @@
         background-color: #1e2f51;
     }
 
+    &.menu-open {
+        & .header__body {
+            color: $textColor;
+        }
+    }
+
     &__body {
         display: flex;
         align-items: center;
@@ -22,6 +28,11 @@
 
         @media (max-width: 575.98px) {
             padding-right: 20px;
+        }
+
+        @media (max-width: $md4+px) {
+            display: grid;
+            grid-template-columns: 182px 1fr;
         }
     }
 
@@ -42,6 +53,8 @@
             max-width: 186px;
             margin-left: -11px;
             margin-right: 20px;
+
+            grid-row: span 2;
         }
 
         & img {
@@ -63,6 +76,7 @@
         font-weight: 400;
         line-height: 1.2em;
         white-space: nowrap;
+        transition: all .3s ease;
 
         @media (min-width: 960px) {
             margin-bottom: 3px;
@@ -70,6 +84,10 @@
 
         @media (max-width: $md1+px) {
             font-size: 14px;
+        }
+
+        @media (max-width: $md4+px) {
+            align-self: flex-end;
         }
 
         & svg,
@@ -107,6 +125,10 @@
             display: none;
         }
 
+        @media (max-width: $md4+px) {
+            margin-left: auto;
+        }
+
         & img {
             width: 100%;
             height: auto;
@@ -122,9 +144,10 @@
         left: 100%;
         width: 100%;
         height: 100vh;
-        background-color: $mainColor3;
+        background-color: #fff;
         transition: all 0.6s ease;
         overflow: hidden;
+        color: $textColor;
 
         &.open {
             transform: translateX(-100%);
@@ -162,6 +185,10 @@
     }
 
     &__close {
+        @media (max-width: $md4+px) {
+            transform: translateY(18px);
+        }
+
         & span {
             position: relative;
             width: 20px;
@@ -176,7 +203,7 @@
                 transform: translateX(-50%);
                 width: 2px;
                 height: 100%;
-                background-color: #fff;
+                background-color: $textColor;
             }
             &:after {
                 position: absolute;
@@ -186,7 +213,7 @@
                 transform: translateY(-50%);
                 width: 100%;
                 height: 2px;
-                background-color: #fff;
+                background-color: $textColor;
             }
         }
     }
@@ -200,7 +227,10 @@
             overflow: auto;
         }
         @media (max-width: $md3+px) {
-            padding: 50px 20px;
+            padding: 50px 40px;
+        }
+        @media (max-width: $md4+px) {
+            padding: 50px 25px;
         }
     }
 
@@ -255,7 +285,7 @@
 
         &.current-menu-item {
             & span {
-                color: #fff;
+                color: $mainColor3;
             }
         }
 

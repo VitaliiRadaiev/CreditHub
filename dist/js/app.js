@@ -280,11 +280,13 @@ function trimString(el, stringLength = 0) {
         burger.addEventListener('click', () => {
             menu.classList.add('open');
             document.body.classList.add('lock');
+            header.classList.add('menu-open');
         })
 
         close.addEventListener('click', () => {
             menu.classList.remove('open');
             document.body.classList.remove('lock');
+            header.classList.remove('menu-open');
         })
     }
 }
