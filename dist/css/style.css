@@ -6045,11 +6045,8 @@ textarea {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 78.2rem;
+  width: 88.2rem;
   z-index: -1;
-  -webkit-transform: translateX(8.5%);
-      -ms-transform: translateX(8.5%);
-          transform: translateX(8.5%);
 }
 
 .promo__img img {
@@ -6057,6 +6054,9 @@ textarea {
   z-index: 2;
   position: relative;
   display: block;
+  -webkit-transform: translateX(19.5%);
+      -ms-transform: translateX(19.5%);
+          transform: translateX(19.5%);
 }
 
 .promo__values-title {
@@ -8456,6 +8456,9 @@ hr {
 
   .promo__img {
     width: 581px;
+  }
+
+  .promo__img img {
     -webkit-transform: translateX(27.5%);
         -ms-transform: translateX(27.5%);
             transform: translateX(27.5%);
@@ -9183,6 +9186,12 @@ hr {
         -ms-transform: translateX(20px);
             transform: translateX(20px);
     margin-left: auto;
+  }
+
+  .promo__img img {
+    -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+            transform: translateX(20px);
   }
 
   .promo__values-title {

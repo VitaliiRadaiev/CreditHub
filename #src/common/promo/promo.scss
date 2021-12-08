@@ -185,19 +185,23 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 78.2rem;
+        width: 88.2rem;
         z-index: -1;
-        transform: translateX(8.5%);
+
         & img {
             width: 100%;
             z-index: 2;
             position: relative;
             display: block;
+            transform: translateX(19.5%);
         }
 
         @media (max-width: $md2+px) {
             width: 581px;
-            transform: translateX(27.5%);
+
+            & img {
+                transform: translateX(27.5%);
+            }
         }
 
         @media (max-width: 575.98px) {
@@ -205,6 +209,10 @@
             width: 448px;
             transform: translateX(20px);
             margin-left: auto;
+
+            & img {
+                transform: translateX(20px);
+            }
 
             & img {
                 @media (max-width: 375.98px) {
