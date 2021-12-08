@@ -5774,6 +5774,9 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__logo-list li {
@@ -5792,6 +5795,10 @@ textarea {
 
 .footer__logo-list li:not(:last-child) {
   margin-right: 2.9rem;
+}
+
+.footer__logo-list li:last-child {
+  height: 9px;
 }
 
 .footer__logo-list li img {
@@ -8320,7 +8327,15 @@ hr {
   }
 
   .social li a {
-    height: 18px;
+    height: 15px;
+  }
+
+  .social li:nth-child(2) a {
+    height: 13px;
+  }
+
+  .social li:nth-child(3) a {
+    height: 12px;
   }
 
   .promo__body {
@@ -8496,10 +8511,6 @@ hr {
   .united-world-vision__text.text-content {
     font-size: 14px;
     max-width: 512px;
-  }
-
-  .united-world-vision__text.text-content {
-    max-width: 391px;
   }
 
   .hero__bg img {
@@ -9034,6 +9045,10 @@ hr {
   .united-world-vision__title {
     max-width: 344px;
     margin: 0 auto 28px;
+  }
+
+  .united-world-vision__text.text-content {
+    max-width: 391px;
   }
 
   .hero.hero--conveyance .hero__title {

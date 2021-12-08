@@ -140,6 +140,7 @@
     &__logo-list {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
 
         & li {
             height: 3.9rem;
@@ -158,6 +159,10 @@
                 @media (max-width: $md1+px) {
                     margin-right: 17px;
                 }
+            }
+
+            &:last-child {
+                height: 9px;
             }
 
             & img {
@@ -297,7 +302,7 @@
             transition: all 0.3s ease;
 
             @media (max-width: $md1+px) {
-                height: 18px;
+                height: 15px;
             }
 
             & img,
@@ -313,5 +318,19 @@
                 }
             }
         }
+
+        @media (max-width: $md1+px) {
+            &:nth-child(2) {
+               & a {
+                   height: 13px;
+               }
+            }
+            &:nth-child(3) {
+               & a {
+                   height: 12px;
+               }
+            }
+        }
+
     }
 }
