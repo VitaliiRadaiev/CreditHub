@@ -170,5 +170,99 @@ window.addEventListener('DOMContentLoaded', function () {
             anim2.play();
             anim3.play();
         })
+    } else {
+        let anim1 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.header__logo',
+            translateY: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 600,
+            delay: 800,
+        })
+        .add({
+            targets:['.menu__link, .header__phone'],
+            opacity: [0, 1],
+            translateY: ['-100%', '0%'],
+            delay: (el, i) => 100 * i,
+            duration: 200,
+        }, '-=200');
+
+        window.addEventListener('load', function () {
+            anim1.play();
+        })
+    }
+
+    let hero = document.querySelector('.hero');
+    if(hero) {
+        let anim1 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.breadcrumbs',
+            translateX: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 700,
+            delay: 800,
+        })
+        .add({
+            targets: hero.querySelector('.hero__text-wrap > .btn-default'),
+            translateX: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 700,
+        }, '-=200')
+        .add({
+            targets: ['.hero__title', '.hero__btn-group'],
+            translateX: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 700,
+        }, '-=400')
+        .add({
+            targets: '.hero__bg img',
+            opacity: [0, 1],
+            translateX: ['100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=400')
+
+        window.addEventListener('load', function () {
+            anim1.play();
+        })
+    }
+
+    let aboutHero = document.querySelector('.about-hero');
+    if(aboutHero) {
+        let anim1 = anime.timeline({
+            easing: 'easeInOutQuad',
+            autoplay: false,
+        })
+        .add({
+            targets: '.breadcrumbs',
+            translateX: ['-100%', '0%'],
+            opacity: [0, 1],
+            duration: 700,
+            delay: 800,
+        })
+        .add({
+            targets: '.about-hero__title',
+            opacity: [0, 1],
+            translateY: ['50%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=200')
+        .add({
+            targets: '.about-hero__video',
+            opacity: [0, 1],
+            translateY: ['50%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 700,
+        }, '-=200')
+
+        window.addEventListener('load', function () {
+            anim1.play();
+        })
     }
 });
