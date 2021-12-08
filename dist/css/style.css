@@ -8185,8 +8185,16 @@ hr {
     font-size: 31px;
   }
 
+  .title-2 {
+    font-size: 27px;
+  }
+
   .title-4 {
     font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 16px;
   }
 
   .btn-default {
@@ -8356,6 +8364,33 @@ hr {
 
   .values-circle {
     font-size: 6px;
+  }
+
+  .process-item__circle {
+    height: 105px;
+    width: 105px;
+    margin-bottom: 24px;
+  }
+
+  .process-item__num {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .process-item__icon {
+    height: 40px;
+  }
+
+  .process-item__arrow {
+    width: 36px;
+  }
+
+  .process-item__title {
+    font-size: 16px;
+  }
+
+  .process-item__text {
+    font-size: 13px;
   }
 
   .offer__bottom-title.title-5 {
@@ -8642,20 +8677,12 @@ hr {
     font-size: 28px;
   }
 
-  .title-2 {
-    font-size: 27px;
-  }
-
   .title-3 {
     font-size: 23px;
   }
 
   .title-5 {
     font-size: 24px;
-  }
-
-  .subtitle {
-    font-size: 16px;
   }
 
   .text-content.text-content--big-text {
@@ -8760,33 +8787,6 @@ hr {
   .process__subtitle {
     max-width: 410px;
     margin-bottom: 37px;
-  }
-
-  .process-item__circle {
-    height: 105px;
-    width: 105px;
-    margin-bottom: 24px;
-  }
-
-  .process-item__num {
-    font-size: 18px;
-    margin-bottom: 6px;
-  }
-
-  .process-item__icon {
-    height: 40px;
-  }
-
-  .process-item__arrow {
-    width: 36px;
-  }
-
-  .process-item__title {
-    font-size: 16px;
-  }
-
-  .process-item__text {
-    font-size: 13px;
   }
 
   .tabs__trigger {

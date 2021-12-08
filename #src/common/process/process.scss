@@ -135,7 +135,7 @@
         border: 2px solid $mainColor;
         position: relative;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md1+px) {
             height: 105px;
             width: 105px;
             margin-bottom: 24px;
@@ -147,7 +147,7 @@
         color: $mainColor;
         margin-bottom: 1rem;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md1+px) {
             font-size: 18px;
             margin-bottom: 6px;
         }
@@ -163,7 +163,7 @@
             display: block;
         }
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md1+px) {
             height: 40px;
         }
     }
@@ -175,7 +175,7 @@
         transform: translate(100%, -50%);
         width: 6.1rem;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md1+px) {
             width: 36px;
         }
 
@@ -196,7 +196,7 @@
         line-height: 1.19em;
         margin-bottom: 1.7rem;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md1+px) {
             font-size: 16px;
         }
     }
@@ -209,7 +209,7 @@
         max-width: 19rem;
         margin: 0 auto;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md1+px) {
             font-size: 13px;
         }
 
