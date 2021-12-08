@@ -362,10 +362,10 @@ function trimString(el, stringLength = 0) {
     if(offerSlider) {
         let dataSlider = new Swiper(offerSlider.querySelector('.swiper-container'), {
 
-            // autoplay: {
-            //     delay: 6000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
         
             slidesPerView: 1,
             spaceBetween: 20,

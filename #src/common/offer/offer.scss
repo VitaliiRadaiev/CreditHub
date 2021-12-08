@@ -46,10 +46,8 @@
         flex-wrap: wrap;
         margin-bottom: 4.8rem;
 
-        @media (max-width: $md3+px) {
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         & > li {
             flex: 0 1 20%;
@@ -77,97 +75,90 @@
                 height: auto;
             }
 
-
             @media (min-width: 768px) {
                 &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5n + 5)) {
                     position: relative;
-    
-                    
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            top: 0;
-                            right: 0;
-                            width: 1px;
-                            height: 6rem;
-                            background-color: #dcebf6;
-                            transform: translateY(-50%);
-                            display: block;
-                        }
-                        &:after {
-                            position: absolute;
-                            content: "";
-                            top: 0;
-                            right: 0;
-                            width: 6rem;
-                            height: 1px;
-                            background-color: #dcebf6;
-                            transform: translateX(50%);
-                            display: block;
-                        }
-                    
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 1px;
+                        height: 6rem;
+                        background-color: #dcebf6;
+                        transform: translateY(-50%);
+                        display: block;
+                    }
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 6rem;
+                        height: 1px;
+                        background-color: #dcebf6;
+                        transform: translateX(50%);
+                        display: block;
+                    }
                 }
             }
 
             @media (max-width: 767.98px) and (min-width: 480px) {
                 &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3n + 3)) {
                     position: relative;
-    
-                  
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            top: 0;
-                            right: 0;
-                            width: 1px;
-                            height: 6rem;
-                            background-color: #dcebf6;
-                            transform: translateY(-50%);
-                            display: block;
-                        }
-                        &:after {
-                            position: absolute;
-                            content: "";
-                            top: 0;
-                            right: 0;
-                            width: 6rem;
-                            height: 1px;
-                            background-color: #dcebf6;
-                            transform: translateX(50%);
-                            display: block;
-                        }
-                    
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 1px;
+                        height: 6rem;
+                        background-color: #dcebf6;
+                        transform: translateY(-50%);
+                        display: block;
+                    }
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 6rem;
+                        height: 1px;
+                        background-color: #dcebf6;
+                        transform: translateX(50%);
+                        display: block;
+                    }
                 }
             }
 
             @media (max-width: $md4+px) {
                 &:nth-child(odd):not(:first-child) {
                     position: relative;
-    
-              
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            top: 0;
-                            right: 0;
-                            width: 1px;
-                            height: 6rem;
-                            background-color: #dcebf6;
-                            transform: translateY(-50%);
-                            display: block;
-                        }
-                        &:after {
-                            position: absolute;
-                            content: "";
-                            top: 0;
-                            right: 0;
-                            width: 6rem;
-                            height: 1px;
-                            background-color: #dcebf6;
-                            transform: translateX(50%);
-                            display: block;
-                        }
-                    
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 1px;
+                        height: 6rem;
+                        background-color: #dcebf6;
+                        transform: translateY(-50%);
+                        display: block;
+                    }
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 6rem;
+                        height: 1px;
+                        background-color: #dcebf6;
+                        transform: translateX(50%);
+                        display: block;
+                    }
                 }
             }
         }
@@ -225,6 +216,14 @@
             font-size: 13px;
         }
     }
+
+    &__top {
+        display: flex;
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+    }
 }
 
 hr {
@@ -241,11 +240,11 @@ hr {
 
 .slider-offer {
     & .swiper-container {
-        padding-bottom: 5.6rem;
+        padding-top: 5.6rem;
     }
 
     & .swiper-pagination {
-        bottom: 2.2rem;
+        top: 2.2rem;
 
         & .swiper-pagination-bullet {
             opacity: 1;
@@ -261,11 +260,6 @@ hr {
     }
 
     &__item {
-        display: flex;
-
-        @media (max-width: $md3+px) {
-            flex-direction: column;
-        }
     }
 
     &__col-1 {
@@ -359,13 +353,12 @@ hr {
                     }
 
                     & .values-circle__layer-1._anime {
-
                         & circle {
                             stroke-dashoffset: 100;
                             stroke-dasharray: 100;
-                            transition: all .6s ease 0.2s;
+                            transition: all 0.6s ease 0.2s;
                         }
-    
+
                         &._active {
                             & circle {
                                 stroke-dashoffset: 25;
@@ -384,11 +377,10 @@ hr {
                     stroke-width: 0.4px !important;
                     stroke-dashoffset: 25;
                     stroke-dasharray: 50;
-                    transition: all .6s ease;
+                    transition: all 0.6s ease;
                 }
 
                 & .values-circle__layer-1._anime {
-
                     & circle {
                         stroke-dashoffset: 100;
                         stroke-dasharray: 100;
