@@ -6034,11 +6034,11 @@ textarea {
 }
 
 .promo__text {
-  opacity: 0.2;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2em;
   margin-bottom: 5.6rem;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .promo__img {
@@ -6072,20 +6072,12 @@ textarea {
   margin-right: 2.5rem;
 }
 
-.promo__values-list > li:nth-child(2) .values-circle .values-circle__layer-1 svg circle {
-  stroke-width: 0.15em;
-}
-
 .promo__values-list > li:nth-child(2) .values-circle .values-circle__layer-1 svg circle.donut-hole {
   stroke: #1eadaf;
 }
 
 .promo__values-list > li:nth-child(2) .values-circle .values-circle__layer-1 svg circle.donut-ring {
-  stroke: #28cacd;
-}
-
-.promo__values-list > li:nth-child(3) .values-circle .values-circle__layer-1 svg circle {
-  stroke-width: 0.15em;
+  stroke: #6edbdd;
 }
 
 .promo__values-list > li:nth-child(3) .values-circle .values-circle__layer-1 svg circle.donut-hole {
@@ -6094,6 +6086,19 @@ textarea {
 
 .promo__values-list > li:nth-child(3) .values-circle .values-circle__layer-1 svg circle.donut-ring {
   stroke: rgba(255, 255, 255, 0.57);
+}
+
+.google-img {
+  position: absolute;
+  right: 19px;
+  bottom: 17px;
+  width: 190px;
+  z-index: 3;
+}
+
+.google-img img {
+  width: 100%;
+  height: auto;
 }
 
 .promo-values-mob-wrap {
@@ -6147,7 +6152,7 @@ textarea {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  stroke: #43a3e0;
+  stroke: #67b5e6;
   stroke-dashoffset: 100;
   stroke-dasharray: 100;
 }
@@ -8156,16 +8161,8 @@ hr {
             transform: translateX(1em);
   }
 
-  .promo__values-list > li:nth-child(2) .values-circle:hover .values-circle__layer-1 svg circle.donut-ring {
-    stroke-dashoffset: 65;
-  }
-
-  .promo__values-list > li:nth-child(3) .values-circle:hover .values-circle__layer-1 svg circle.donut-ring {
-    stroke-dashoffset: 40;
-  }
-
   .values-circle:hover .values-circle__layer-1 svg circle.donut-ring {
-    stroke-dashoffset: 30;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -8296,6 +8293,12 @@ hr {
 
   .social li a {
     height: 18px;
+  }
+
+  .google-img {
+    right: 11px;
+    bottom: 10px;
+    width: 114px;
   }
 
   .offer__bottom-title.title-5 {
