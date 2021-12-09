@@ -447,10 +447,12 @@ function trimString(el, stringLength = 0) {
         let quizItems = quizSlider.querySelectorAll('.quiz-radio-checkbox');
         if(quizItems.length) {
             quizItems.forEach(item => {
+                let input = item.querySelector('input');
                 item.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     dataSlider.slideNext();
+                    input.checked = true; 
                 })
             })
         }
