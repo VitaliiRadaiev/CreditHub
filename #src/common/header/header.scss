@@ -375,6 +375,10 @@
             margin-bottom: 35px;
         }
 
+        @media (max-width: $md4+px) {
+            justify-content: center;
+        }
+
         & > li {
             flex: 0 1 25%;
             padding: 0 7.5px;
@@ -382,7 +386,7 @@
 
             @media (max-width: $md3+px) {
                 flex: 0 1 50%;
-                max-width: 189px;
+                max-width: 204px;
                 margin-bottom: 15px;
             }
 

@@ -123,6 +123,13 @@
             }
         }
 
+        @media (max-width: $md4+px) {
+            &.container {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
         @media (max-width: 575.98px) {
             min-height: auto;
             & .breadcrumbs, & .btn-default {
