@@ -151,6 +151,10 @@
 
             @media (max-width: $md1+px) {
                 height: 23px;
+
+                &:last-child {
+                    height: 9px;
+                }
             }
 
             &:not(:last-child) {
@@ -161,9 +165,7 @@
                 }
             }
 
-            &:last-child {
-                height: 9px;
-            }
+
 
             & img {
                 max-width: 100%;

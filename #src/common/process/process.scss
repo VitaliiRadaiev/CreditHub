@@ -9,6 +9,13 @@
 
     &__body {
         text-align: center;
+
+        @media (max-width: $md4+px) {
+            &.container {
+                padding-left: 39px;
+                padding-right: 39px;
+            }
+        }
     }
 
     &__title {
