@@ -55,6 +55,18 @@
                 }
             }
         }
+
+        & .calculator-card__wrap {
+            @media (max-width: $md1+px) {
+                padding-bottom: 60px;
+            }
+        }
+
+        & .calculator-card__text {
+            @media (max-width: $md1+px) {
+                padding: 0 15px;
+            }
+        }
     }
 
     & .advantages {
@@ -112,10 +124,27 @@
             padding-left: 16px;
             padding-right: 16px;
             padding-bottom: 6rem;
+
+            @media (max-width: $md1+px) {
+                padding-bottom: 52px;
+            }
         }
 
         & .calculator-card__title {
-            padding: 0 2.1rem;
+
+            @media (min-width: 1268px) {
+                padding: 0 2.1rem;
+            }
+
+            @media (max-width: $md1+px) {
+                max-width: 85%;
+            }
+        }
+
+        & .calculator-card__text {
+            @media (max-width: $md1+px) {
+                padding: 0 24px;
+            }
         }
     }
 }
