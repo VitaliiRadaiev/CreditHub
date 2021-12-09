@@ -221,7 +221,7 @@ window.addEventListener('DOMContentLoaded', function () {
             duration: 700,
         }, '-=400')
         .add({
-            targets: '.hero__bg img',
+            targets: '.hero__bg',
             opacity: [0, 1],
             translateX: ['100%', '0%'],
             easing: 'easeInOutQuad',

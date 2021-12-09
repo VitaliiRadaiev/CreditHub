@@ -7,6 +7,15 @@
         background: linear-gradient(0deg, #1f2f51 30%, #1f4581 70%);
     }
 
+    & .breadcrumbs {
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 575.98px) {
+            display: none;
+        }
+    }
+
     &.hero--conveyance {
         & .hero__title {
             margin-left: 0;
@@ -53,12 +62,15 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-        text-align: center;
+        text-align: right;
+
+        @media (max-width: $md1+px) {
+            text-align: center;
+        }
 
         & img {
             display: inline-block;
             height: 100%;
-            transform: translateX(5%);
 
             @media (max-width: $md1+px) {
                 transform: translateX(-4%);
