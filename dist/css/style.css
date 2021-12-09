@@ -7518,7 +7518,8 @@ hr {
   font-weight: 400;
   line-height: 1.2em;
   color: #fff;
-  margin-bottom: 3.9rem;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .breadcrumbs__label {
@@ -7552,6 +7553,11 @@ hr {
 
 .about-hero {
   position: relative;
+}
+
+.about-hero .breadcrumbs {
+  position: relative;
+  z-index: 3;
 }
 
 .about-hero__bg {
@@ -8548,6 +8554,15 @@ hr {
             transform: translateX(-4%);
   }
 
+  .breadcrumbs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .text-b.text-b--col-2 .col:nth-child(2).text-content {
+    font-size: 13px;
+  }
+
   .about__text-wrap {
     max-width: 321px;
   }
@@ -9138,7 +9153,6 @@ hr {
 
   .breadcrumbs {
     padding-top: 19px;
-    margin-bottom: 24px;
     font-size: 13px;
   }
 
@@ -9850,6 +9864,11 @@ hr {
 
   .united-world-vision__text {
     padding: 0 9px;
+  }
+
+  .breadcrumbs {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .about-hero__title {

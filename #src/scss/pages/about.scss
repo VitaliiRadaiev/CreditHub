@@ -1,6 +1,11 @@
 .about-hero {
     position: relative;
 
+    & .breadcrumbs {
+        position: relative;
+        z-index: 3;
+    }
+
     &__bg {
         position: absolute;
         top: 0;
@@ -115,6 +120,12 @@
 
                 @media (max-width: $md3+px) {
                     padding-right: 0;
+                }
+
+                @media (max-width: $md1+px) {
+                    &.text-content {
+                        font-size: 13px;
+                    }
                 }
             }
         }
