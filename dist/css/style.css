@@ -8853,6 +8853,10 @@ hr {
     margin-bottom: 25px;
   }
 
+  .footer__bottom-col-1 p:first-child {
+    margin-bottom: 11px;
+  }
+
   .process {
     padding-top: 88px;
     margin-bottom: 98px;
@@ -9078,7 +9082,7 @@ hr {
     padding-bottom: 72px;
   }
 
-  .united-world-vision__body {
+  .united-world-vision__body.container {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -9319,11 +9323,9 @@ hr {
 
   .promo__img {
     position: static;
-    width: 448px;
-    -webkit-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-            transform: translateX(20px);
+    width: 490px;
     margin-left: auto;
+    margin-top: -26px;
   }
 
   .promo__img img {
@@ -9720,6 +9722,7 @@ hr {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
     height: 65px;
+    padding: 20px;
   }
 
   .offer__logo-list > li:nth-child(odd):not(:first-child) {
@@ -9752,6 +9755,21 @@ hr {
         -ms-transform: translateX(50%);
             transform: translateX(50%);
     display: block;
+  }
+
+  .offer__bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .offer__bottom-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .offer__top {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .slider-offer__values {
@@ -9828,6 +9846,10 @@ hr {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .united-world-vision__text {
+    padding: 0 9px;
   }
 
   .about-hero__title {

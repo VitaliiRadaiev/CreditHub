@@ -275,6 +275,10 @@
             margin-right: 0;
             max-width: 375px;
             margin-bottom: 25px;
+
+            & p:first-child {
+                margin-bottom: 11px;
+            }
         }
     }
 
