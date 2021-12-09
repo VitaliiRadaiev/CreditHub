@@ -5480,9 +5480,6 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -7.5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .calculators__list > li {
@@ -8215,6 +8212,12 @@ hr {
 }
 
 @media (min-width: 1268px) {
+  .calculators__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .conveyancing-hub .calculator-card .calculator-card__title {
     padding: 0 2.1rem;
   }
@@ -9173,6 +9176,7 @@ hr {
 
   .hero.hero--conveyance .hero__title {
     margin-top: 51px;
+    font-size: 21px;
   }
 
   .hero.hero--conveyance .hero__bg img {
@@ -9189,6 +9193,11 @@ hr {
 
   .hero__body {
     min-height: 335px;
+  }
+
+  .hero__body.container {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .hero__title {
@@ -9275,11 +9284,26 @@ hr {
     max-width: 403px;
   }
 
+  .conveyancing-hub .calculator-card .calculator-card__wrap {
+    padding-bottom: 60px;
+  }
+
+  .conveyancing-hub .calculator-card .calculator-card__text {
+    padding: 0 9px;
+  }
+
+  .card-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 415px;
+    margin: 0 auto;
+  }
+
   .card-list > li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
-    max-width: 189px;
     margin-bottom: 15px;
   }
 

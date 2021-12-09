@@ -365,7 +365,11 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -7.5px;
-        justify-content: center;
+
+        @media (min-width: 1268px) {
+            justify-content: center;
+        }
+        
 
         @media (max-width: $md3+px) {
             margin-bottom: 35px;

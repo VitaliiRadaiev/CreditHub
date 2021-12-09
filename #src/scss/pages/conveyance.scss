@@ -128,6 +128,9 @@
             @media (max-width: $md1+px) {
                 padding-bottom: 52px;
             }
+            @media (max-width: $md3+px) {
+                padding-bottom: 60px;
+            }
         }
 
         & .calculator-card__title {
@@ -145,6 +148,10 @@
             @media (max-width: $md1+px) {
                 padding: 0 24px;
             }
+
+            @media (max-width: $md3+px) {
+                padding: 0 9px;
+            }
         }
     }
 }
@@ -155,6 +162,12 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 -10px;
+
+    @media (max-width: $md3+px) {
+        justify-content: flex-start;
+        max-width: 415px;
+        margin: 0 auto;
+    }
 
     & > li {
         padding: 0 10px;
@@ -167,7 +180,7 @@
 
         @media (max-width: $md3+px) {
             flex: 0 1 50%;
-            max-width: 189px;
+         
             margin-bottom: 15px;
         }
 
