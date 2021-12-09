@@ -427,7 +427,6 @@ function trimString(el, stringLength = 0) {
             	el: quizSlider.querySelector('.swiper-pagination'),
             	clickable: true,
             },
-
             breakpoints: {
                 320: {
                     direction: 'horizontal',
@@ -444,6 +443,17 @@ function trimString(el, stringLength = 0) {
             },
 
         });
+
+        let quizItems = quizSlider.querySelectorAll('.quiz-radio-checkbox');
+        if(quizItems.length) {
+            quizItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dataSlider.slideNext();
+                })
+            })
+        }
     }
 };
 
@@ -794,7 +804,7 @@ if (animItems.length > 0) {
             delay: 800,
         })
         .add({
-            targets: hero.querySelector('.hero__text-wrap > .btn-default'),
+            targets: document.querySelector('.hero > .btn-default'),
             translateX: ['-100%', '0%'],
             opacity: [0, 1],
             duration: 700,

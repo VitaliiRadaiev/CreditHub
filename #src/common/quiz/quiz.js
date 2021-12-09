@@ -9,7 +9,6 @@
             	el: quizSlider.querySelector('.swiper-pagination'),
             	clickable: true,
             },
-
             breakpoints: {
                 320: {
                     direction: 'horizontal',
@@ -26,5 +25,16 @@
             },
 
         });
+
+        let quizItems = quizSlider.querySelectorAll('.quiz-radio-checkbox');
+        if(quizItems.length) {
+            quizItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dataSlider.slideNext();
+                })
+            })
+        }
     }
 }

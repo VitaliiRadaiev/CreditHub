@@ -14,6 +14,26 @@
         @media (max-width: 575.98px) {
             display: none;
         }
+
+        & + .btn-default {
+            margin-top: 39px;
+            position: relative;
+            z-index: 2;
+
+            margin-left: 60px;
+        
+            @media (max-width: $md1+px) {
+                margin-left: 40px;
+            }
+
+            @media (max-width: $md3+px) {
+                margin-top: 24px;
+            }
+
+            @media (max-width: 575.98px) {
+                display: none;
+            }
+        }
     }
 
     &.hero--conveyance {
@@ -108,14 +128,14 @@
     }
 
     &__body {
-        min-height: 52.3rem;
+        min-height: 38.3rem;
         position: relative;
         z-index: 2;
         color: #fff;
         padding-top: 1px;
 
         @media (max-width: $md3+px) {
-            min-height: 335px;
+            min-height: 231px;
 
             &.container {
                 padding-left: 80px;
@@ -156,7 +176,6 @@
         line-height: 1.1148em;
         max-width: 50.4rem;
         margin-bottom: 3rem;
-        margin-left: 7.7rem;
 
         @media (max-width: $md1+px) {
             font-size: 26px;
@@ -166,6 +185,7 @@
             margin-top: 31px;
             margin-bottom: 20px;
             font-size: 26px;
+            max-width: 261px;
         }
 
         @media (max-width: 575.98px) {

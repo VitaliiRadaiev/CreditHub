@@ -209,7 +209,7 @@ window.addEventListener('DOMContentLoaded', function () {
             delay: 800,
         })
         .add({
-            targets: hero.querySelector('.hero__text-wrap > .btn-default'),
+            targets: document.querySelector('.hero > .btn-default'),
             translateX: ['-100%', '0%'],
             opacity: [0, 1],
             duration: 700,

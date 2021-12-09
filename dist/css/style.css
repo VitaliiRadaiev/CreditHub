@@ -6986,6 +6986,13 @@ hr {
   height: 61rem;
 }
 
+.quiz__slider .swiper-pagination {
+  top: 45px;
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
 .quiz__slider .swiper-pagination .swiper-pagination-bullet {
   height: 11px;
   width: 11px;
@@ -7460,6 +7467,13 @@ hr {
   z-index: 2;
 }
 
+.hero .breadcrumbs + .btn-default {
+  margin-top: 39px;
+  position: relative;
+  z-index: 2;
+  margin-left: 60px;
+}
+
 .hero.hero--conveyance .hero__title {
   margin-left: 0;
 }
@@ -7480,7 +7494,7 @@ hr {
 }
 
 .hero__body {
-  min-height: 52.3rem;
+  min-height: 38.3rem;
   position: relative;
   z-index: 2;
   color: #fff;
@@ -7499,7 +7513,6 @@ hr {
   line-height: 1.1148em;
   max-width: 50.4rem;
   margin-bottom: 3rem;
-  margin-left: 7.7rem;
 }
 
 .hero__btn-group > * {
@@ -8565,6 +8578,10 @@ hr {
     max-width: 512px;
   }
 
+  .hero .breadcrumbs + .btn-default {
+    margin-left: 40px;
+  }
+
   .hero.hero--conveyance .hero__body {
     min-height: 292px;
   }
@@ -9174,6 +9191,10 @@ hr {
     max-width: 391px;
   }
 
+  .hero .breadcrumbs + .btn-default {
+    margin-top: 24px;
+  }
+
   .hero.hero--conveyance .hero__title {
     margin-top: 51px;
     font-size: 21px;
@@ -9192,7 +9213,7 @@ hr {
   }
 
   .hero__body {
-    min-height: 335px;
+    min-height: 231px;
   }
 
   .hero__body.container {
@@ -9204,6 +9225,7 @@ hr {
     margin-top: 31px;
     margin-bottom: 20px;
     font-size: 26px;
+    max-width: 261px;
   }
 
   .hero__btn-group {
@@ -9501,7 +9523,7 @@ hr {
   }
 
   .quiz__slider .swiper-pagination {
-    bottom: 0;
+    bottom: auto;
     top: 50px;
   }
 
@@ -9539,6 +9561,10 @@ hr {
   }
 
   .hero .breadcrumbs {
+    display: none;
+  }
+
+  .hero .breadcrumbs + .btn-default {
     display: none;
   }
 
@@ -9896,6 +9922,10 @@ hr {
 
   .reviews-card {
     min-height: 301px;
+  }
+
+  .quiz__title {
+    padding: 0 17px;
   }
 
   .loans {
