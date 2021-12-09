@@ -4,6 +4,10 @@
     & .breadcrumbs {
         position: relative;
         z-index: 3;
+
+        @media (max-width: $md4+px) {
+            display: none;
+        }
     }
 
     &__bg {
@@ -133,8 +137,8 @@
 
     &__body {
         @media (max-width: 575.98px) {
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-left: 44px;
+            padding-right: 44px;
             text-align: center;
         }
     }
@@ -191,6 +195,10 @@
                 & > *:not(figure) {
                     max-width: 40.2rem;
                 }
+
+                & > p, & > ul {
+                    max-width: 156px;
+                }
             }
         }
 
@@ -215,7 +223,15 @@
 
 
             & ul {
-                font-size: 14px;
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: $md3+px) {
+                & > p, & > ul {
+                    max-width: 149px;
+                }
             }
         }
     }
@@ -225,6 +241,10 @@
 
         @media (max-width: $md1+px) {
             max-width: 321px;
+
+            &.text-content {
+                font-size: 13px;
+            }
         }
 
         @media (max-width: 575.98px) {

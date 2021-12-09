@@ -7650,10 +7650,6 @@ hr {
           flex: 0 1 calc(50% - 6.5rem);
 }
 
-.about__col-2 .about__text-wrap ul {
-  font-size: 14px;
-}
-
 .about__text-wrap {
   max-width: 52rem;
 }
@@ -7962,6 +7958,11 @@ hr {
     max-width: 40.2rem;
   }
 
+  .about__col-1 .about__text-wrap > p,
+  .about__col-1 .about__text-wrap > ul {
+    max-width: 156px;
+  }
+
   .about__col-2 .about__text-wrap > *:not(figure) {
     max-width: 47.2rem;
   }
@@ -8041,6 +8042,10 @@ hr {
 
   .hero__btn-group > *:not(:last-child) {
     margin-right: 10px;
+  }
+
+  .about__col-2 .about__text-wrap ul {
+    font-size: 14px;
   }
 }
 
@@ -8565,6 +8570,10 @@ hr {
 
   .about__text-wrap {
     max-width: 321px;
+  }
+
+  .about__text-wrap.text-content {
+    font-size: 13px;
   }
 
   .conveyance-page .calculators {
@@ -9182,6 +9191,11 @@ hr {
     padding-right: 0;
   }
 
+  .about__col-2 .about__text-wrap > p,
+  .about__col-2 .about__text-wrap > ul {
+    max-width: 149px;
+  }
+
   .conveyance-page .calculators {
     padding-bottom: 70px;
   }
@@ -9535,8 +9549,8 @@ hr {
   }
 
   .text-b__body {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 44px;
+    padding-right: 44px;
     text-align: center;
   }
 
@@ -9869,6 +9883,10 @@ hr {
   .breadcrumbs {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .about-hero .breadcrumbs {
+    display: none;
   }
 
   .about-hero__title {
