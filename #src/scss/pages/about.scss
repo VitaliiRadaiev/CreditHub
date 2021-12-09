@@ -195,7 +195,9 @@
                 & > *:not(figure) {
                     max-width: 40.2rem;
                 }
+            }
 
+            @media (max-width: $md1+px) and (min-width: 575.98px) {
                 & > p, & > ul {
                     max-width: 156px;
                 }
@@ -228,7 +230,7 @@
                 }
             }
 
-            @media (max-width: $md3+px) {
+            @media (max-width: $md3+px) and (min-width: 575.98px) {
                 & > p, & > ul {
                     max-width: 149px;
                 }

@@ -7958,11 +7958,6 @@ hr {
     max-width: 40.2rem;
   }
 
-  .about__col-1 .about__text-wrap > p,
-  .about__col-1 .about__text-wrap > ul {
-    max-width: 156px;
-  }
-
   .about__col-2 .about__text-wrap > *:not(figure) {
     max-width: 47.2rem;
   }
@@ -9191,11 +9186,6 @@ hr {
     padding-right: 0;
   }
 
-  .about__col-2 .about__text-wrap > p,
-  .about__col-2 .about__text-wrap > ul {
-    max-width: 149px;
-  }
-
   .conveyance-page .calculators {
     padding-bottom: 70px;
   }
@@ -9957,6 +9947,20 @@ hr {
         -ms-transform: translateX(50%);
             transform: translateX(50%);
     display: block;
+  }
+}
+
+@media (max-width: 1267.98px) and (min-width: 575.98px) {
+  .about__col-1 .about__text-wrap > p,
+  .about__col-1 .about__text-wrap > ul {
+    max-width: 156px;
+  }
+}
+
+@media (max-width: 767.98px) and (min-width: 575.98px) {
+  .about__col-2 .about__text-wrap > p,
+  .about__col-2 .about__text-wrap > ul {
+    max-width: 149px;
   }
 }
 
