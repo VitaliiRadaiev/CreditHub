@@ -14,6 +14,10 @@
         & .header__body {
             color: $textColor;
         }
+
+        & .header__burger {
+            z-index: -1;
+        }
     }
 
     &__body {
@@ -88,6 +92,8 @@
 
         @media (max-width: $md4+px) {
             align-self: flex-end;
+            font-size: 11px;
+            margin-top: -5px;
         }
 
         & svg,
@@ -95,6 +101,11 @@
             width: 16px;
             height: auto;
             margin-right: 5px;
+
+            @media (max-width: $md4+px) {
+                width: 12px;
+                margin-right: 2px;
+            }
         }
 
         & svg {
@@ -127,6 +138,7 @@
 
         @media (max-width: $md4+px) {
             margin-left: auto;
+            transform: translateY(-2px);
         }
 
         & img {
@@ -205,7 +217,7 @@
 
     &__close {
         @media (max-width: $md4+px) {
-            transform: translateY(18px);
+            transform: translateY(14px);
         }
 
         & span {
@@ -373,6 +385,8 @@
 
         @media (max-width: $md3+px) {
             margin-bottom: 35px;
+            max-width: 408px;
+            margin: 0 auto 10px;
         }
 
         @media (max-width: $md4+px) {
