@@ -6,7 +6,8 @@
     z-index: 48;
     transition: all 0.4s ease;
 
-    &.is-scroll, &.bg {
+    &.is-scroll,
+    &.bg {
         background-color: #1e2f51;
     }
 
@@ -73,54 +74,27 @@
 
     &__phone {
         margin-left: auto;
-        display: flex;
-        align-items: center;
-        color: inherit;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.2em;
         white-space: nowrap;
-        transition: all .3s ease;
 
-        @media (min-width: 960px) {
-            margin-bottom: 3px;
-        }
-
-        @media (max-width: $md1+px) {
-            font-size: 14px;
-        }
-
-        @media (max-width: $md4+px) {
-            align-self: flex-end;
-            font-size: 11px;
-            margin-top: -5px;
-        }
-
-        & svg,
-        & img {
-            width: 16px;
-            height: auto;
-            margin-right: 5px;
-
+        &.secondary-btn {
             @media (max-width: $md4+px) {
-                width: 12px;
-                margin-right: 2px;
-            }
-        }
+                padding: 0;
+                border: none;
+                background:none;
+                min-height: auto;
+                font-size: 13px;
+                margin-bottom: -10px;
 
-        & svg {
-            & path {
-                fill: $mainColor;
-                transition: all 0.3s ease;
-            }
-        }
-
-        @media (min-width: 960px) {
-            &:hover {
-                & svg {
-                    & path {
-                        fill: #fff;
-                    }
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 0.31em;
+                    height: 0.625em;
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCA0IDkiPjxnPjxnPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0uMDQuNTd2OC4wMmwzLjc5NC0zLjc5NHoiLz48L2c+PC9nPjwvc3ZnPg==);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-right: 0.25em;
                 }
             }
         }
@@ -180,11 +154,9 @@
             padding-right: 20px;
         }
 
- 
-
         &:before {
             position: absolute;
-            content: '';
+            content: "";
             bottom: 0;
             left: 50%;
             height: 2px;
@@ -345,7 +317,7 @@
     padding: 14.7rem 0;
 
     @media (max-width: $md3+px) {
-        padding: 50px 0 80px; 
+        padding: 50px 0 80px;
     }
 
     &__body {
@@ -353,7 +325,6 @@
             &.container-sm {
                 padding-left: 40px;
                 padding-right: 40px;
-
             }
         }
     }
@@ -381,7 +352,6 @@
         @media (min-width: 1268px) {
             justify-content: center;
         }
-        
 
         @media (max-width: $md3+px) {
             margin-bottom: 35px;
@@ -408,7 +378,7 @@
                 flex: 0 1 100%;
             }
 
-            &:nth-child(4n+2) {
+            &:nth-child(4n + 2) {
                 & .calculator-card {
                     & .calculator-card__btn {
                         background-color: $mainColor2;
@@ -427,7 +397,7 @@
                     }
                 }
             }
-            &:nth-child(4n+3) {
+            &:nth-child(4n + 3) {
                 & .calculator-card {
                     & .calculator-card__btn {
                         background-color: $mainColor3;
@@ -436,7 +406,6 @@
                     & .calculator-card__title {
                         color: $mainColor3;
                     }
-
 
                     @media (min-width: 960px) {
                         &:hover {
@@ -447,7 +416,7 @@
                     }
                 }
             }
-            &:nth-child(4n+4) {
+            &:nth-child(4n + 4) {
                 & .calculator-card {
                     & .calculator-card__btn {
                         background-color: $mainColor4;
@@ -456,7 +425,6 @@
                     & .calculator-card__title {
                         color: $mainColor4;
                     }
-
 
                     @media (min-width: 960px) {
                         &:hover {
@@ -502,7 +470,8 @@
     @media (min-width: 960px) {
         &:hover {
             & .calculator-card__icon {
-                & img, & svg {
+                & img,
+                & svg {
                     transform: scale(1.1);
                 }
             }
@@ -514,7 +483,7 @@
 
     &__wrap {
         flex: 1 1 auto;
-        padding: 3.8rem 2.5rem 3rem;
+        padding: 3.8rem 3.4rem 3rem;
     }
 
     &__icon {
@@ -539,7 +508,7 @@
             max-height: 40px;
             width: auto;
             height: auto;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
 
             @media (max-width: $md1+px) {
                 max-height: 30px;
@@ -583,7 +552,7 @@
         line-height: 1.2em;
         padding: 1.4rem 3rem;
         background-color: $mainColor;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
 
         @media (max-width: $md1+px) {
             font-size: 13px;
@@ -592,10 +561,7 @@
     }
 }
 
-
-
 .free-property {
-
     &__body {
         display: flex;
 
@@ -607,7 +573,6 @@
             &.container-sm {
                 padding-left: 40px;
                 padding-right: 40px;
-
             }
         }
     }
@@ -706,15 +671,14 @@
 
         &:before {
             position: absolute;
-            content: '';
-            top: 0; 
+            content: "";
+            top: 0;
             left: 15.3rem;
             height: 100%;
             width: 70vw;
             background-color: $mainColor;
             z-index: 1;
         }
-
 
         & img {
             width: 100%;
